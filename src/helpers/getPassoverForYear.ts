@@ -1,18 +1,15 @@
-import {HebrewCalendar, HDate, Location, Event} from "@hebcal/core";
+// https://www.npmjs.com/package/@hebcal/core#HebrewCalendar.getHolidaysForYear
+import {HebrewCalendar} from "@hebcal/core";
 
 export interface PassoverDates {
     start: Date,
     end: Date
 }
 
-const getNextPassover = () : PassoverDates => {
-    const today:Date = new Date();
-    const day= today.getDay();
-    const month = today.getMonth();
-    const year = today.getFullYear();
-    const passoverStartDescription: string = "Erev Pesach";
-    const passoverEndDescriotion: string = "Pesach VIII"
+const passoverStartDescription: string = "Erev Pesach";
+const passoverEndDescriotion: string = "Pesach VIII"
 
+const getPassoverForYear = (year: number) => {
     const options = {
         year: year,
         isHebrewHear: false
@@ -21,10 +18,9 @@ const getNextPassover = () : PassoverDates => {
     let passoverStart: Date = new Date();
     let passoverEnd: Date = new Date();
 
+    const holidaysForYear = HebrewCalendar.calendar(options);
 
-    const events = HebrewCalendar.calendar(options);
-
-    events.forEach(event => {
+    holidaysForYear.forEach(event => {
         if (event.desc === passoverStartDescription) {
             passoverStart = event.getDate().greg();
         }
@@ -41,4 +37,4 @@ const getNextPassover = () : PassoverDates => {
     return passoverDates;
 }
 
-export default getNextPassover;
+export default getPassoverForYear;
