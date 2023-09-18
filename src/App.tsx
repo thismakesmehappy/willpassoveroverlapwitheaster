@@ -20,28 +20,57 @@ function App() {
   const nextX = getNextX(numberOfYears);
   console.log(nextX);
 
+  const head = nextX[0];
+  const tail = nextX.slice(1);
+
+  console.log("Head " + head);
+  console.log("Tail " + tail);
+
   return (
     <>
       <div className="p-5 row align-items-center h3">
         <div className="col col-6 text-center align-middle">
-          Passover {year} <br />
+          Passover {head.year} <br />
           falls between
           <br />
-          {passoverDates.start.toDateString()} <br />
+          {head.passoverStart.toDateString()} <br />
           and
           <br />
-          {passoverDates.end.toDateString()}
+          {head.passoverEnd.toDateString()}
         </div>
         <div className="col col-6 text-center align-middle">
-          Easter {year} <br />
+          Easter {head.year} <br />
           falls on
-          <br /> {easter.toDateString()}
+          <br /> {head.easterDate.toDateString()}
         </div>
         <div className={"text-center col-12 h1 p-4"}>
-          In {year}, Passover and Easter do {!overlap && "not"} overlap
+          In {head.year}, Passover and Easter do {!head.overlap && "not"}{" "}
+          overlap
         </div>
       </div>
       <hr />
+      {console.log(tail)}
+      <div className="row">
+        {tail.map((item) => {
+          const year = item.year;
+          const passoverStart = item.passoverStart.toDateString();
+          const passoverEnd = item.passoverEnd.toDateString();
+          const easterDate = item.easterDate.toDateString();
+          const overlap = item.overlap;
+          return (
+            <div className="text-center">
+              In {year}, Easter and Passover do {!overlap && "not"} overlap
+              <br />
+              Passover start: {passoverStart}
+              <br />
+              Passover end: {passoverEnd} <br />
+              Easter: {easterDate}
+              <br />
+              ---
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }
