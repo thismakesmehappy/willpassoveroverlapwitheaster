@@ -1,30 +1,15 @@
-import getPassoverForYear from "./helpers/getPassoverForYear.ts";
-
 import "./css/style.css";
-import getEasterForYear from "./helpers/getEasterForYear.ts";
-import getDoEasterAndPassoverOverlap from "./helpers/getDoEasterAndPassoverOverlap.ts";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 import getNextX from "./helpers/getNextX.ts";
 
-const today: Date = new Date();
-const year = today.getFullYear() + 1;
+const numberOfYears = 10;
 
 function App() {
-  const passoverDates = getPassoverForYear(year);
-  console.log(passoverDates);
-
-  const easter = getEasterForYear(year);
-
-  const overlap = getDoEasterAndPassoverOverlap(passoverDates, easter);
-
-  const numberOfYears = 10;
   const nextX = getNextX(numberOfYears);
-  console.log(nextX);
 
   const head = nextX[0];
   const tail = nextX.slice(1);
-
-  console.log("Head " + head);
-  console.log("Tail " + tail);
 
   return (
     <>
@@ -49,7 +34,6 @@ function App() {
         </div>
       </div>
       <hr />
-      {console.log(tail)}
       <div className="row">
         {tail.map((item) => {
           const year = item.year;
@@ -58,7 +42,7 @@ function App() {
           const easterDate = item.easterDate.toDateString();
           const overlap = item.overlap;
           return (
-            <div className="text-center">
+            <div className="col col-12 col-md-6 col-lg-4 text-center">
               In {year}, Easter and Passover do {!overlap && "not"} overlap
               <br />
               Passover start: {passoverStart}
