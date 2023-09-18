@@ -3,6 +3,7 @@ import getPassoverForYear from "./helpers/getPassoverForYear.ts";
 import "./css/style.css";
 import getEasterForYear from "./helpers/getEasterForYear.ts";
 import getDoEasterAndPassoverOverlap from "./helpers/getDoEasterAndPassoverOverlap.ts";
+import getNextX from "./helpers/getNextX.ts";
 
 const today: Date = new Date();
 const year = today.getFullYear() + 1;
@@ -14,6 +15,10 @@ function App() {
   const easter = getEasterForYear(year);
 
   const overlap = getDoEasterAndPassoverOverlap(passoverDates, easter);
+
+  const numberOfYears = 10;
+  const nextX = getNextX(numberOfYears);
+  console.log(nextX);
 
   return (
     <>
@@ -36,6 +41,7 @@ function App() {
           In {year}, Passover and Easter do {!overlap && "not"} overlap
         </div>
       </div>
+      <hr />
     </>
   );
 }
