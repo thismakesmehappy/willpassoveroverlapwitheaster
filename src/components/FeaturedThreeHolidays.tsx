@@ -1,9 +1,5 @@
 import { PassoverAndEaster } from "../helpers/getHolidaysForYear.ts";
-
-interface DateAndHoliday {
-  date: Date;
-  holiday: string;
-}
+import OneOfThreeHolidays, { DateAndHoliday } from "./OneOfThreeHolidays.tsx";
 
 interface Props {
   holidays: PassoverAndEaster;
@@ -17,27 +13,9 @@ const FeaturedThreeHolidays = ({ holidays }: Props) => {
   const threeHolidays: Array<DateAndHoliday> = getThreeHolidays(holidays);
   return (
     <>
-      <div className="col col-12 col-md-4">
-        {threeHolidays[0].date.toDateString()}
-        <br />
-        <i className="bi bi-arrow-up"></i>
-        <br />
-        {threeHolidays[0].holiday}
-      </div>
-      <div className="col col-12 col-md-4">
-        {threeHolidays[1].date.toDateString()}
-        <br />
-        <i className="bi bi-arrow-up"></i>
-        <br />
-        {threeHolidays[1].holiday}
-      </div>
-      <div className="col col-12 col-md-4">
-        {threeHolidays[2].date.toDateString()}
-        <br />
-        <i className="bi bi-arrow-up"></i>
-        <br />
-        {threeHolidays[2].holiday}
-      </div>
+      <OneOfThreeHolidays holiday={threeHolidays[0]} />
+      <OneOfThreeHolidays holiday={threeHolidays[1]} />
+      <OneOfThreeHolidays holiday={threeHolidays[2]} />
     </>
   );
 };
