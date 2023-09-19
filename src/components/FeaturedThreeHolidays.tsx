@@ -5,7 +5,7 @@ interface Props {
   holidays: PassoverAndEaster;
 }
 
-const passoverStart = "Passover End";
+const passoverStart = "Passover Start";
 const passoverEnd = "Passover End";
 const easter = "Easter";
 

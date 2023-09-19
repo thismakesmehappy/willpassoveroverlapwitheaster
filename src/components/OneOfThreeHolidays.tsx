@@ -1,3 +1,5 @@
+import { formatDatesLong } from "../helpers/formatDates.ts";
+
 export interface DateAndHoliday {
   date: Date;
   holiday: string;
@@ -11,7 +13,7 @@ const OneOfThreeHolidays = ({ holiday }: Props) => {
   return (
     <>
       <div className="col col-12 col-md-4">
-        {holiday.date.toDateString()}
+        {formatDatesLong(holiday.date)}
         <br />
         <i className="bi bi-arrow-up"></i>
         <br />
