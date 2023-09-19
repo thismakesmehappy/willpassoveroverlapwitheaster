@@ -1,1 +1,9 @@
 @import "bootstrap/bootstrap.min.css";
+
+.tight {
+    letter-spacing: -.5em;
+}
+
+.open {
+    letter-spacing: .5em;
+}

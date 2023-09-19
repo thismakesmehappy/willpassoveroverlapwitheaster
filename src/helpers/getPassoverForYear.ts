@@ -20,21 +20,28 @@ const getPassoverForYear = (year: number) => {
 
   const holidaysForYear = HebrewCalendar.calendar(options);
 
-  holidaysForYear.forEach((event) => {
-    if (event.desc === passoverStartDescription) {
-      passoverStart = event.getDate().greg();
-    }
-    if (event.desc === passoverEndDescriotion) {
-      passoverEnd = event.getDate().greg();
-    }
-  });
+  holidaysForYear.forEach(
+    (event: {
+      desc: string;
+      getDate: () => {
+        (): never;
+        new (): never;
+        greg: { (): Date; new (): never };
+      };
+    }) => {
+      if (event.desc === passoverStartDescription) {
+        passoverStart = event.getDate().greg();
+      }
+      if (event.desc === passoverEndDescriotion) {
+        passoverEnd = event.getDate().greg();
+      }
+    },
+  );
 
-  const passoverDates = {
+  return {
     start: passoverStart,
     end: passoverEnd,
   } as PassoverDates;
-
-  return passoverDates;
 };
 
 export default getPassoverForYear;
