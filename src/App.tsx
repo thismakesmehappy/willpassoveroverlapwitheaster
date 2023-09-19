@@ -2,6 +2,7 @@ import "./css/style.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import getNextX from "./helpers/getNextX.ts";
+import DisplayFeatured from "./components/DisplayFeatured.tsx";
 
 const numberOfYears = 10;
 
@@ -13,26 +14,7 @@ function App() {
 
   return (
     <>
-      <div className="p-5 row align-items-center h3">
-        <div className="col col-6 text-center align-middle">
-          Passover {head.year} <br />
-          falls between
-          <br />
-          {head.passoverStart.toDateString()} <br />
-          and
-          <br />
-          {head.passoverEnd.toDateString()}
-        </div>
-        <div className="col col-6 text-center align-middle">
-          Easter {head.year} <br />
-          falls on
-          <br /> {head.easterDate.toDateString()}
-        </div>
-        <div className={"text-center col-12 h1 p-4"}>
-          In {head.year}, Passover and Easter do {!head.overlap && "not"}{" "}
-          overlap
-        </div>
-      </div>
+      <DisplayFeatured holidays={head} />
       <hr />
       <div className="row">
         {tail.map((item) => {
