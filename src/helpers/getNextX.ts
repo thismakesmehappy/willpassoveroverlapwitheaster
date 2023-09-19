@@ -1,5 +1,3 @@
-import getPassoverForYear from "./getPassoverForYear.ts";
-import getEasterForYear from "./getEasterForYear.ts";
 import getHolidaysForYear, { PassoverAndEaster } from "./getHolidaysForYear.ts";
 import getYearForNextHolidays from "./getYearForNextHolidays.ts";
 
