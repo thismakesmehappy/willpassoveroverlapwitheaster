@@ -1,4 +1,4 @@
-import { PassoverAndEaster } from "../helpers/getNextX.ts";
+import { PassoverAndEaster } from "../helpers/getHolidaysForYear.ts";
 
 interface DateAndHoliday {
   date: Date;
