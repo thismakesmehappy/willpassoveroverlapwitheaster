@@ -1,15 +1,10 @@
 import getPassoverForYear from "./getPassoverForYear.ts";
 import getEasterForYear from "./getEasterForYear.ts";
 import getHolidaysForYear, { PassoverAndEaster } from "./getHolidaysForYear.ts";
+import getYearForNextHolidays from "./getYearForNextHolidays.ts";
 
 const getNextX = (x: number) => {
-  const today = new Date();
-  let startYear = today.getFullYear();
-  const thisPassover = getPassoverForYear(startYear);
-  const thisEaster = getEasterForYear(startYear);
-  if (thisPassover.end < today && thisEaster < today) {
-    startYear += 1;
-  }
+  const startYear = getYearForNextHolidays();
 
   const nextX: Array<PassoverAndEaster> = [];
 
