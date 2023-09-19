@@ -1,14 +1,6 @@
-import getPassoverForYear, { PassoverDates } from "./getPassoverForYear.ts";
+import getPassoverForYear from "./getPassoverForYear.ts";
 import getEasterForYear from "./getEasterForYear.ts";
-import getDoEasterAndPassoverOverlap from "./getDoEasterAndPassoverOverlap.ts";
-
-export interface PassoverAndEaster {
-  year: number;
-  passoverStart: Date;
-  passoverEnd: Date;
-  easterDate: Date;
-  overlap: boolean;
-}
+import getHolidaysForYear, { PassoverAndEaster } from "./getHolidaysForYear.ts";
 
 const getNextX = (x: number) => {
   const today = new Date();
@@ -23,16 +15,7 @@ const getNextX = (x: number) => {
 
   for (let i = 0; i < x; i++) {
     const year = startYear + i;
-    const passover: PassoverDates = getPassoverForYear(year);
-    const easter: Date = getEasterForYear(year);
-    const overlap: boolean = getDoEasterAndPassoverOverlap(passover, easter);
-    nextX.push({
-      year: year,
-      passoverStart: passover.start,
-      passoverEnd: passover.end,
-      easterDate: easter,
-      overlap: overlap,
-    });
+    nextX.push(getHolidaysForYear(year));
   }
 
   return nextX;
