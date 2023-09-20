@@ -47,3 +47,9 @@ export enum monthsShort {
   "Nov",
   "Dec",
 }
+
+export enum icons {
+  start = "bi-arrow-bar-right",
+  end = "bi-arrow-bar-left",
+  whole = "bi bi-circle",
+}

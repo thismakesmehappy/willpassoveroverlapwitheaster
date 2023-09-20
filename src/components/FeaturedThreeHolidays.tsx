@@ -1,5 +1,6 @@
 import { PassoverAndEaster } from "../helpers/getHolidaysForYear.ts";
-import OneOfThreeHolidays, { DateAndHoliday } from "./OneOfThreeHolidays.tsx";
+import FeaturedOneHoliday, { DateAndHoliday } from "./FeaturedOneHoliday.tsx";
+import { icons } from "../data/enums.ts";
 
 interface Props {
   holidays: PassoverAndEaster;
@@ -13,39 +14,36 @@ const FeaturedThreeHolidays = ({ holidays }: Props) => {
   const threeHolidays: Array<DateAndHoliday> = getThreeHolidays(holidays);
   return (
     <>
-      <OneOfThreeHolidays holiday={threeHolidays[0]} />
-      <OneOfThreeHolidays holiday={threeHolidays[1]} />
-      <OneOfThreeHolidays holiday={threeHolidays[2]} />
+      <FeaturedOneHoliday holiday={threeHolidays[0]} />
+      <FeaturedOneHoliday holiday={threeHolidays[1]} />
+      <FeaturedOneHoliday holiday={threeHolidays[2]} />
     </>
   );
 };
 
 const getThreeHolidays = (holidays: PassoverAndEaster) => {
-  const threeHolidays: Array<DateAndHoliday> = [];
-
+  const passoverStartHoliday = {
+    date: holidays.passoverStart,
+    holiday: passoverStart,
+    icon: icons.start,
+  };
+  const passoverEndHoliday = {
+    date: holidays.passoverEnd,
+    holiday: passoverEnd,
+    icon: icons.end,
+  };
+  const easterHoliday = {
+    date: holidays.easterDate,
+    holiday: easter,
+    icon: icons.whole,
+  };
   if (holidays.easterDate < holidays.passoverStart) {
-    threeHolidays.push({ date: holidays.easterDate, holiday: easter });
-    threeHolidays.push({
-      date: holidays.passoverStart,
-      holiday: passoverStart,
-    });
-    threeHolidays.push({ date: holidays.passoverEnd, holiday: passoverEnd });
+    return [easterHoliday, passoverStartHoliday, passoverEndHoliday];
   } else if (holidays.easterDate > holidays.passoverEnd) {
-    threeHolidays.push({
-      date: holidays.passoverStart,
-      holiday: passoverStart,
-    });
-    threeHolidays.push({ date: holidays.passoverEnd, holiday: passoverEnd });
-    threeHolidays.push({ date: holidays.easterDate, holiday: easter });
+    return [passoverStartHoliday, passoverEndHoliday, easterHoliday];
   } else {
-    threeHolidays.push({
-      date: holidays.passoverStart,
-      holiday: passoverStart,
-    });
-    threeHolidays.push({ date: holidays.easterDate, holiday: easter });
-    threeHolidays.push({ date: holidays.passoverEnd, holiday: passoverEnd });
+    return [passoverStartHoliday, easterHoliday, passoverEndHoliday];
   }
-  return threeHolidays;
 };
 
 export default FeaturedThreeHolidays;
