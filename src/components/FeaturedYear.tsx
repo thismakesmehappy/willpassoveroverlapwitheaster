@@ -1,7 +1,7 @@
 import { PassoverAndEaster } from "../helpers/getHolidaysForYear.ts";
 import FeaturedThreeHolidays from "./FeaturedThreeHolidays.tsx";
 import FeaturedYearHeader from "./FeaturedYearHeader.tsx";
-import FeaturedPassoverAndEasterOverlap from "./FeaturedPassoverAndEasterOverlap.tsx";
+import PassoverAndEasterOverlap from "./PassoverAndEasterOverlap.tsx";
 
 interface Props {
   holidays: PassoverAndEaster;
@@ -31,7 +31,7 @@ const FeaturedYear = ({
       <FeaturedThreeHolidays holidays={holidays} />
 
       <div className="text-center col-12 h1 p-4">
-        <FeaturedPassoverAndEasterOverlap overlap={holidays.overlap} />
+        <PassoverAndEasterOverlap overlap={holidays.overlap} />
       </div>
     </div>
   );

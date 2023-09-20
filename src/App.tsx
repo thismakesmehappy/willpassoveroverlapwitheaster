@@ -3,7 +3,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 import getNextX from "./helpers/getNextX.ts";
 import FeaturedYear from "./components/FeaturedYear.tsx";
-import DisplayList from "./components/DisplayList.tsx";
+import StandardList from "./components/StandardList.tsx";
 import { useState } from "react";
 import { numberOfYears } from "./data/constants.ts";
 
@@ -32,7 +32,7 @@ function App() {
         decreaseYear={decreaseYear}
       />
       <hr />
-      <DisplayList listOfHolidays={nextX} />
+      <StandardList listOfHolidays={nextX} />
     </>
   );
 }

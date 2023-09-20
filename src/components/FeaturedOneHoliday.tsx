@@ -1,13 +1,6 @@
-import { formatDatesLong } from "../helpers/formatDates.ts";
-import { icons } from "../data/enums.ts";
 import OneHolidayVertical from "./OneHolidayVertical.tsx";
 import { OneHolidayHorizonal } from "./OneHolidayHorizonal.tsx";
-
-export interface DateAndHoliday {
-  date: Date;
-  holiday: string;
-  icon: icons | null;
-}
+import { DateAndHoliday } from "../helpers/DateAndHoliday.ts";
 
 interface Props {
   holiday: DateAndHoliday;

@@ -4,7 +4,7 @@ interface Props {
   overlap: boolean;
 }
 
-const FeaturedPassoverAndEasterOverlap = ({ overlap }: Props) => {
+const PassoverAndEasterOverlap = ({ overlap }: Props) => {
   return (
     <div>
       Passover and Easter {!overlap && "do not"} overlap
@@ -13,4 +13,4 @@ const FeaturedPassoverAndEasterOverlap = ({ overlap }: Props) => {
   );
 };
 
-export default FeaturedPassoverAndEasterOverlap;
+export default PassoverAndEasterOverlap;
