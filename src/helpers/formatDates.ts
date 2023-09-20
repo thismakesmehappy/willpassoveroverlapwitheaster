@@ -1,4 +1,4 @@
-import { days, daysShort, months, monthsShort } from "./enums.ts";
+import { days, daysShort, months, monthsShort } from "../css/data/enums.ts";
 
 export const formatDatesLong = (date: Date) => {
   return (

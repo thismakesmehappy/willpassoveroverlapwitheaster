@@ -5,8 +5,7 @@ import getNextX from "./helpers/getNextX.ts";
 import FeaturedYear from "./components/FeaturedYear.tsx";
 import DisplayList from "./components/DisplayList.tsx";
 import { useState } from "react";
-
-const numberOfYears = 10;
+import { numberOfYears } from "./css/data/constants.ts";
 
 function App() {
   const [yearOffset, setYearOffset] = useState(0);
