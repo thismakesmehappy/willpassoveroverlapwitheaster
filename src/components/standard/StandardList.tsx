@@ -1,4 +1,4 @@
-import { PassoverAndEaster } from "../helpers/getHolidaysForYear.ts";
+import { PassoverAndEaster } from "../../helpers/getHolidaysForYear.ts";
 import StandardYear from "./StandardYear.tsx";
 
 interface Props {

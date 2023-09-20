@@ -2,8 +2,8 @@ import "./css/style.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import getNextX from "./helpers/getNextX.ts";
-import FeaturedYear from "./components/FeaturedYear.tsx";
-import StandardList from "./components/StandardList.tsx";
+import FeaturedYear from "./components/featured/FeaturedYear.tsx";
+import StandardList from "./components/standard/StandardList.tsx";
 import { useState } from "react";
 import { numberOfYears } from "./data/constants.ts";
 

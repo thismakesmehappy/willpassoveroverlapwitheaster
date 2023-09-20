@@ -1,6 +1,6 @@
-import { PassoverAndEaster } from "../helpers/getHolidaysForYear.ts";
+import { PassoverAndEaster } from "../../helpers/getHolidaysForYear.ts";
 import FeaturedOneHoliday from "./FeaturedOneHoliday.tsx";
-import { getThreeHolidays } from "../helpers/getThreeHolidays.ts";
+import { getThreeHolidays } from "../../helpers/getThreeHolidays.ts";
 
 interface Props {
   holidays: PassoverAndEaster;
