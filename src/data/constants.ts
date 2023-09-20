@@ -1,1 +1,1 @@
-export const numberOfYears = 10;
+export const numberOfYears = 12;
