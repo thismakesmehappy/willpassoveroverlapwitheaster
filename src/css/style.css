@@ -65,3 +65,13 @@ hr {
 .featured-year {
     border: #a3cfbb solid 1px;
 }
+
+.change-year, .change-year:hover, .change-year:active {
+    font-weight: bold;
+    text-decoration: none;
+    color: #f1aeb5;
+}
+
+.change-years {
+    background-color: #e3efee;
+}

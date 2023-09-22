@@ -16,13 +16,20 @@ const FeaturedYearHeader = ({
       <p className="has-passed">
         {passed ? "Passover and Easter already passed this year" : <>&nbsp;</>}
       </p>
-      <div className="year">
-        <button onClick={decreaseYear} className={"btn btn-link"}>
-          -
+      <div className="year">{year}</div>
+      <div className="change-years">
+        <button
+          onClick={decreaseYear}
+          className={"btn btn-link change-year last-year"}
+        >
+          {"<<"} Previous Year
         </button>
-        {year}
-        <button onClick={increaseYear} className={"btn btn-link"}>
-          +
+        |
+        <button
+          onClick={increaseYear}
+          className={"btn btn-link change-year next-year"}
+        >
+          Next Year {">>"}
         </button>
       </div>
     </div>
