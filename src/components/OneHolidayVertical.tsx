@@ -9,14 +9,14 @@ interface Props {
 
 export const OneHolidayVertical = ({ holiday, short }: Props) => {
   return (
-    <>
+    <div className="one-holiday one-holiday-vertical">
       {short ? formatDatesShort(holiday.date) : formatDatesLong(holiday.date)}
       <br />
       {holiday.holiday}
       <br />
 
       {holiday.icon && <i className={"bi " + holiday.icon} />}
-    </>
+    </div>
   );
 };
 

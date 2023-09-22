@@ -1,5 +1,14 @@
 @import "bootstrap/bootstrap.min.css";
 
+hr {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid #00ff00;
+    border-radius: 8px;
+    opacity: 100%;
+}
+
 .tight {
     letter-spacing: -.5em;
 }
@@ -14,4 +23,45 @@
 
 .rotate-180 {
     transform: rotate(-180deg);
+}
+
+.one-holiday {
+    color: #ff0000;
+}
+
+.one-holiday-horizontal {
+    text-decoration: underline;
+}
+
+.one-holiday-vertical {
+    text-decoration: line-through;
+}
+
+.overlap {
+    color: #ff8800;
+}
+
+.header {
+    color: #22FF22;
+}
+
+.has-passed {
+    background-color: #ffaaaa;
+}
+
+.year {
+    font-size: 2em;
+    letter-spacing: 1.2em;
+}
+
+.passover-and-easter-overlap {
+    color: #00dd
+}
+
+.standard-year {
+    border: #f1aeb5 solid 1px;
+}
+
+.featured-year {
+    border: #a3cfbb solid 1px;
 }

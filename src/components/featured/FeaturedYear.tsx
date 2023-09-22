@@ -20,7 +20,7 @@ const FeaturedYear = ({
   const passed: boolean = isNext && today.getFullYear() < holidays.year;
 
   return (
-    <div className="p-5 row align-items-center text-center">
+    <div className="p-5 row align-items-center text-center container-sm m-auto featured-year">
       <FeaturedYearHeader
         passed={passed}
         year={holidays.year}

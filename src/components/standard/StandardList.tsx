@@ -14,7 +14,10 @@ const StandardList = ({ listOfHolidays }: Props) => {
             className="col col-12 col-md-6 col-lg-4 col-xl-3 text-center"
             key={"holiday" + holiday.year}
           >
-            <StandardYear holiday={holiday} />
+            <StandardYear
+              holiday={holiday}
+              key={"standardyear" + holiday.year}
+            />
           </div>
         );
       })}

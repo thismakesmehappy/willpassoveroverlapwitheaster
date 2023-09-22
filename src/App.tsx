@@ -1,5 +1,4 @@
 import "./css/style.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
 
 import getNextX from "./helpers/getNextX.ts";
 import FeaturedYear from "./components/featured/FeaturedYear.tsx";
@@ -24,7 +23,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="container-responsive">
       <FeaturedYear
         holidays={nextX[yearOffset]}
         isNext={yearOffset == 0}
@@ -33,7 +32,7 @@ function App() {
       />
       <hr />
       <StandardList listOfHolidays={nextX} />
-    </>
+    </div>
   );
 }
 

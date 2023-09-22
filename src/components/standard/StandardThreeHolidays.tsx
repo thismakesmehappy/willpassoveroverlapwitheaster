@@ -11,10 +11,13 @@ const StandardThreeHolidays = ({ holidays }: Props) => {
   return (
     <>
       {threeHolidays.map((item) => (
-        <>
+        <div
+          className="one-holiday"
+          key={"oneHoliday" + item.holiday + item.date}
+        >
           <OneHolidayHorizonal holiday={item} short={true} />
           <br />
-        </>
+        </div>
       ))}
     </>
   );

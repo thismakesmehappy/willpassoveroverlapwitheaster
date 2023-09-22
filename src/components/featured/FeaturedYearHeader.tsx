@@ -12,9 +12,11 @@ const FeaturedYearHeader = ({
   increaseYear,
 }: Props) => {
   return (
-    <div className="col col-12 bg-info bg-gradient">
-      {passed && <div>Passover and Easter already passed this year</div>}
-      <div className="h1">
+    <div className="col col-12 header">
+      <p className="has-passed">
+        {passed ? "Passover and Easter already passed this year" : <>&nbsp;</>}
+      </p>
+      <div className="year">
         <button onClick={decreaseYear} className={"btn btn-link"}>
           -
         </button>

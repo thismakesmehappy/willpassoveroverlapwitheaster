@@ -6,7 +6,7 @@ interface Props {
 
 const PassoverAndEasterOverlap = ({ overlap }: Props) => {
   return (
-    <div>
+    <div className="passover-and-easter-overlap">
       Passover and Easter {!overlap && "do not"} overlap
       <Overlap overlap={overlap} />
     </div>

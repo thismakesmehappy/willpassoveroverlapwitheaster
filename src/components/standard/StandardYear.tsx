@@ -8,12 +8,13 @@ interface Props {
 
 export const StandardYear = ({ holiday }: Props) => {
   return (
-    <>
-      <div>{holiday.year}</div>
-
+    <div className="standard-year">
+      <div className="header">
+        <div className="year">{holiday.year}</div>
+      </div>
       <PassoverAndEasterOverlap overlap={holiday.overlap} />
       <StandardThreeHolidays holidays={holiday} />
-    </>
+    </div>
   );
 };
 

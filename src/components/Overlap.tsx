@@ -7,7 +7,7 @@ interface Props {
 
 const Overlap = ({ overlap }: Props) => {
   return (
-    <div className={overlap ? "tight" : "open"}>
+    <div className={overlap ? "overlap tight" : "overlap open"}>
       <i className="bi bi-circle" />
       <i className="bi bi-circle" />
     </div>
