@@ -10,9 +10,9 @@ const FeaturedThreeHolidays = ({ holidays }: Props) => {
   const threeHolidays = getThreeHolidays(holidays);
   return (
     <>
-      <FeaturedOneHoliday holiday={threeHolidays[0]} />
-      <FeaturedOneHoliday holiday={threeHolidays[1]} />
-      <FeaturedOneHoliday holiday={threeHolidays[2]} />
+      {threeHolidays.map((holidays) => (
+        <FeaturedOneHoliday holiday={holidays} />
+      ))}
     </>
   );
 };

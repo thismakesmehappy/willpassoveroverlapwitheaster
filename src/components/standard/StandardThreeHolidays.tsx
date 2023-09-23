@@ -16,7 +16,6 @@ const StandardThreeHolidays = ({ holidays }: Props) => {
           key={"oneHoliday" + item.holiday + item.date}
         >
           <OneHolidayHorizonal holiday={item} short={true} />
-          <br />
         </div>
       ))}
     </>
