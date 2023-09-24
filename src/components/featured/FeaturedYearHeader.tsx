@@ -14,7 +14,11 @@ const FeaturedYearHeader = ({
   return (
     <div className="col col-12 header">
       <p className="has-passed">
-        {passed ? "Passover and Easter already passed this year" : <>&nbsp;</>}
+        {passed ? (
+          `Passover and Easter already passed in ${year - 1}`
+        ) : (
+          <>&nbsp;</>
+        )}
       </p>
       <div className="year">{year}</div>
       <div className="change-years">
