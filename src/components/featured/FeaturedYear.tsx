@@ -1,6 +1,4 @@
-import getHolidaysForYear, {
-  PassoverAndEaster,
-} from "../../helpers/getHolidaysForYear.ts";
+import getHolidaysForYear from "../../helpers/getHolidaysForYear.ts";
 import FeaturedThreeHolidays from "./FeaturedThreeHolidays.tsx";
 import FeaturedYearHeader from "./FeaturedYearHeader.tsx";
 import PassoverAndEasterOverlap from "../PassoverAndEasterOverlap.tsx";
