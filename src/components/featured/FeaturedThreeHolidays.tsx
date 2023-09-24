@@ -9,11 +9,13 @@ interface Props {
 const FeaturedThreeHolidays = ({ holidays }: Props) => {
   const threeHolidays = getThreeHolidays(holidays);
   return (
-    <>
-      {threeHolidays.map((holidays) => (
-        <FeaturedOneHoliday holiday={holidays} />
-      ))}
-    </>
+    <div className="three-holidays">
+      <div className="row">
+        {threeHolidays.map((holidays) => (
+          <FeaturedOneHoliday holiday={holidays} />
+        ))}
+      </div>
+    </div>
   );
 };
 

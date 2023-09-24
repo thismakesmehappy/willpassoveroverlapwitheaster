@@ -9,7 +9,7 @@ interface Props {
 const StandardThreeHolidays = ({ holidays }: Props) => {
   const threeHolidays = getThreeHolidays(holidays);
   return (
-    <>
+    <div className="three-holidays">
       {threeHolidays.map((item) => (
         <div
           className="one-holiday"
@@ -18,7 +18,7 @@ const StandardThreeHolidays = ({ holidays }: Props) => {
           <OneHolidayHorizonal holiday={item} short={true} />
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

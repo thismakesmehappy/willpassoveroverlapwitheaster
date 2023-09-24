@@ -20,7 +20,7 @@ const FeaturedYear = ({
   const passed: boolean = isNext && today.getFullYear() < holidays.year;
 
   return (
-    <div className="p-5 row align-items-center text-center container-sm m-auto featured-year">
+    <div className="p-5 row align-items-center text-center col col-12 col-md-10 col-lg-7 col-xl-6 m-auto featured-year">
       <FeaturedYearHeader
         passed={passed}
         year={holidays.year}
@@ -28,11 +28,8 @@ const FeaturedYear = ({
         increaseYear={increaseYear}
       />
 
+      <PassoverAndEasterOverlap overlap={holidays.overlap} />
       <FeaturedThreeHolidays holidays={holidays} />
-
-      <div className="text-center col-12 h1 p-4">
-        <PassoverAndEasterOverlap overlap={holidays.overlap} />
-      </div>
     </div>
   );
 };
