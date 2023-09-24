@@ -12,7 +12,10 @@ const FeaturedThreeHolidays = ({ holidays }: Props) => {
     <div className="three-holidays">
       <div className="row">
         {threeHolidays.map((holidays) => (
-          <FeaturedOneHoliday holiday={holidays} />
+          <FeaturedOneHoliday
+            holiday={holidays}
+            key={`featuredThreeHolidays${holidays.holiday}`}
+          />
         ))}
       </div>
     </div>

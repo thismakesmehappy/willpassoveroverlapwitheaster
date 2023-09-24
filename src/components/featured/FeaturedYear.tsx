@@ -31,6 +31,7 @@ const FeaturedYear = () => {
         year={holidays.year}
         decreaseYear={decreaseYear}
         increaseYear={increaseYear}
+        resetYear={resetYear}
       />
 
       <PassoverAndEasterOverlap overlap={holidays.overlap} />

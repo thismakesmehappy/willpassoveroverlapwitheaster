@@ -3,6 +3,7 @@ interface Props {
   year: number;
   decreaseYear: () => void;
   increaseYear: () => void;
+  resetYear: () => void;
 }
 
 const FeaturedYearHeader = ({
@@ -10,6 +11,7 @@ const FeaturedYearHeader = ({
   year,
   decreaseYear,
   increaseYear,
+  resetYear,
 }: Props) => {
   return (
     <div className="col col-12 header">
@@ -30,10 +32,17 @@ const FeaturedYearHeader = ({
         </button>
         |
         <button
+          onClick={resetYear}
+          className={"btn btn-link change-year next-year"}
+        >
+          Next Holidays
+        </button>
+        |
+        <button
           onClick={increaseYear}
           className={"btn btn-link change-year next-year"}
         >
-          Next Year {">>"}
+          Following Year {">>"}
         </button>
       </div>
     </div>
