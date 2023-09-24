@@ -28,7 +28,7 @@ hr {
 
 .standard-year {
     border: #000000 solid 1px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     border-radius: 0.5rem;
     margin: 1rem 0.25rem;
     overflow: hidden;
@@ -56,7 +56,7 @@ hr {
 }
 
 .featured-year .year {
-    font-size: 2.5em;
+    font-size: 3em;
     line-height: 1em;
     margin-top: .125em;
     margin-bottom: .0625em;
@@ -72,7 +72,7 @@ hr {
     text-transform: uppercase;
     line-height: 0.9em;
     margin: 0;
-    padding: .75em 0;
+    padding: .75em;
     border-bottom: solid 1px #000000;
 }
 
@@ -84,9 +84,6 @@ hr {
     background-color: #000000;
     color: #ffffff !important;
     padding-bottom: 1.5rem;
-}
-
-.featured-year .header {
 }
 
 .standard-year .header {
@@ -102,21 +99,20 @@ hr {
 
 /* Label above featured year to determine if the holidays hav already passed */
 
-.has-passed {
-    font-size: .8em;
+.has-passed, .change-years {
+    font-size: .9em;
     margin: 0;
     line-height: 1em;
     padding: 0 0 0.2rem;
+    font-weight: 200;
+}
+
+.change-years {
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 /* Buttons below featured year switch year to display */
-
-.change-years {
-    font-size: 0.8em;
-    margin: 0;
-    padding: 0;
-    line-height: 1em;
-}
 
 .change-year, .change-year:hover, .change-year:active {
     text-decoration: none;
@@ -124,6 +120,8 @@ hr {
     padding: 0 .5em;
     line-height: 1em;
     color: inherit !important;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 /* Common formatting for how we display a single holiday */

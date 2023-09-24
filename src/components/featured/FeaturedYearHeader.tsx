@@ -17,9 +17,17 @@ const FeaturedYearHeader = ({
     <div className="col col-12 header">
       <p className="has-passed">
         {passed ? (
-          `Passover and Easter already passed in ${year - 1}`
+          <>
+            Passover and Easter already passed in {year - 1}
+            <br />
+            Showing you the holidays for next year
+          </>
         ) : (
-          <>&nbsp;</>
+          <>
+            &nbsp;
+            <br />
+            &nbsp;
+          </>
         )}
       </p>
       <div className="year">{year}</div>
@@ -35,7 +43,7 @@ const FeaturedYearHeader = ({
           onClick={resetYear}
           className={"btn btn-link change-year next-year"}
         >
-          Next Holidays
+          This Year
         </button>
         |
         <button
