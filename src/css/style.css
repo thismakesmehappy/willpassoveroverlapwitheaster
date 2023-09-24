@@ -121,9 +121,9 @@ hr {
 .change-year, .change-year:hover, .change-year:active {
     text-decoration: none;
     margin: 0;
-    padding: 0;
+    padding: 0 .5em;
     line-height: 1em;
-    color: inherit;
+    color: inherit !important;
 }
 
 /* Common formatting for how we display a single holiday */
