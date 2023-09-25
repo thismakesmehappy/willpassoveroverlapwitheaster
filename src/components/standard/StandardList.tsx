@@ -2,8 +2,12 @@ import StandardYear from "./StandardYear.tsx";
 import { numberOfYears } from "../../data/constants.ts";
 import getNextX from "../../helpers/getNextX.ts";
 
-const StandardList = () => {
-  const listOfHolidays = getNextX(numberOfYears);
+interface Props {
+  numberOfDays: number;
+}
+
+const StandardList = ({ numberOfDays }: Props) => {
+  const listOfHolidays = getNextX(numberOfYears, numberOfDays);
   return (
     <>
       <div className="at-a-glance h2">{numberOfYears} years at a glance</div>

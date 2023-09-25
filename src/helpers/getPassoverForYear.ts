@@ -7,13 +7,18 @@ export interface PassoverDates {
 }
 
 const passoverStartDescription: string = "Erev Pesach";
-const passoverEndDescriotion: string = "Pesach VIII";
+const passoverEndDescriptionSevenDays: string = "Pesach VII";
+const passoverEndDescriptionEightDays: string = "Pesach VIII";
 
-const getPassoverForYear = (year: number) => {
+const getPassoverForYear = (year: number, passoverDays: number) => {
   const options = {
     year: year,
     isHebrewYear: false,
   };
+  const passoverEndDescription =
+    passoverDays === 8
+      ? passoverEndDescriptionEightDays
+      : passoverEndDescriptionSevenDays;
 
   let passoverStart: Date = new Date();
   let passoverEnd: Date = new Date();
@@ -32,7 +37,7 @@ const getPassoverForYear = (year: number) => {
       if (event.desc === passoverStartDescription) {
         passoverStart = event.getDate().greg();
       }
-      if (event.desc === passoverEndDescriotion) {
+      if (event.desc === passoverEndDescription) {
         passoverEnd = event.getDate().greg();
       }
     },

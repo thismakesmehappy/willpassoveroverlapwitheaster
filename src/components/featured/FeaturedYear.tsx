@@ -4,12 +4,18 @@ import FeaturedYearHeader from "./FeaturedYearHeader.tsx";
 import PassoverAndEasterOverlap from "../PassoverAndEasterOverlap.tsx";
 import getYearForNextHolidays from "../../helpers/getYearForNextHolidays.ts";
 import { useState } from "react";
+import { SevenOrEightDays } from "../SevenOrEightDays.tsx";
 
-const FeaturedYear = () => {
+interface Props {
+  numberOfDays: number;
+  setNumberOfDays: (days: number) => void;
+}
+
+const FeaturedYear = ({ numberOfDays, setNumberOfDays }: Props) => {
   const today: Date = new Date();
-  const year = getYearForNextHolidays();
+  const year = getYearForNextHolidays(numberOfDays);
   const [yearOffset, setYearOffset] = useState(0);
-  const holidays = getHolidaysForYear(year + yearOffset);
+  const holidays = getHolidaysForYear(year + yearOffset, numberOfDays);
   const isNext = yearOffset == 0;
   const passed: boolean = isNext && today.getFullYear() < holidays.year;
 
@@ -33,6 +39,10 @@ const FeaturedYear = () => {
       />
 
       <PassoverAndEasterOverlap overlap={holidays.overlap} />
+      <SevenOrEightDays
+        numberOfDays={numberOfDays}
+        setNumberOfDays={setNumberOfDays}
+      />
       <FeaturedThreeHolidays holidays={holidays} />
     </div>
   );

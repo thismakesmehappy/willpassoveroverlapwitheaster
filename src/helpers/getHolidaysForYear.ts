@@ -10,8 +10,8 @@ export interface PassoverAndEaster {
   overlap: boolean;
 }
 
-const getHolidaysForYear = (year: number) => {
-  const passover: PassoverDates = getPassoverForYear(year);
+const getHolidaysForYear = (year: number, passoverDays: number = 8) => {
+  const passover: PassoverDates = getPassoverForYear(year, passoverDays);
   const easter: Date = getEasterForYear(year);
   const overlap: boolean = getDoEasterAndPassoverOverlap(passover, easter);
 
