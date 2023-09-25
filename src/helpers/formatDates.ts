@@ -9,7 +9,7 @@ export const formatDatesLong = (date: Date) => {
 export const formatDatesShort = (date: Date) => {
   return (
     daysShort[date.getDay()] +
-    ". " +
+    ", " +
     monthsShort[date.getMonth()] +
     " " +
     date.getDate()
