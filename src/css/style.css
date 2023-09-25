@@ -1,6 +1,8 @@
 @import "bootstrap/bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,500;0,800;1,200;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Sans+Pro:ital,wght@0,200;0,500;0,800;1,200;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rammetto+One");
 
 
@@ -16,6 +18,12 @@ hr {
     border: 8px solid #000000;
     border-radius: 8px;
     opacity: 100%;
+}
+
+.at-a-glance {
+    font-family: "Hepta Slab", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .tight {
@@ -49,7 +57,7 @@ hr {
 
 .year {
     font-size: 2em;
-    font-family: Rammetto One, sans-serif;
+    font-family: "Hepta Slab", serif;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
