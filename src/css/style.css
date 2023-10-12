@@ -154,3 +154,29 @@ hr {
 .select-days {
     padding: 0.25em;
 }
+
+#about {
+    border: 1px #000 solid;
+    padding: 0;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+.about-header {
+    background-color: #000;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 0.5em;
+    font-family: "Hepta Slab", sans-serif;
+    text-transform: uppercase;
+}
+
+.about-header-collapsed {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.about-content {
+    padding: 0.5em;
+}

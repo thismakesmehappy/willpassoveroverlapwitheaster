@@ -5,7 +5,13 @@ interface Props {
 
 export function AboutHeader({ shiftButton, showAbout }: Props) {
   return (
-    <div className="about-header text-center">
+    <div
+      className={
+        showAbout
+          ? "about-header text-center"
+          : "about-header text-center about-header-collapsed"
+      }
+    >
       About{" "}
       <button className="btn btn-link" onClick={() => shiftButton(!showAbout)}>
         {showAbout ? (
