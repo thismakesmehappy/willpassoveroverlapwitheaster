@@ -6,7 +6,14 @@ import { AboutContent } from "./AboutContent.tsx";
 export function About() {
   const [showAbout, setShowAbout] = useState(false);
   return (
-    <div id="about" className="col col-12 col-md-6 col-lg-4 col-xl-3 m-auto">
+    <div
+      id="about"
+      className={
+        showAbout
+          ? "col col-12 col-md-10 col-lg-7 m-auto"
+          : "col col-12 col-md-6 col-lg-4 m-auto"
+      }
+    >
       <AboutHeader shiftButton={setShowAbout} showAbout={showAbout} />
       {showAbout && <AboutContent />}
     </div>

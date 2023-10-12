@@ -32,7 +32,7 @@ export const AboutContent = () => {
         .
       </p>
       <p>
-        This app was developed using
+        This app was developed using{" "}
         <a
           href="https://www.hebcal.com"
           target="_blank"
