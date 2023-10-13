@@ -1,18 +1,17 @@
 interface Props {
   shiftButton: (showAbout: boolean) => void;
   showAbout: boolean;
+  title: string;
 }
 
-export function AboutHeader({ shiftButton, showAbout }: Props) {
+export function ExpandableHeader({ shiftButton, showAbout, title }: Props) {
   return (
     <div
       className={
-        showAbout
-          ? "about-header text-center"
-          : "about-header text-center about-header-collapsed"
+        showAbout ? "header text-center" : "header header-collapsed text-center"
       }
     >
-      About{" "}
+      {title}{" "}
       <button className="btn btn-link" onClick={() => shiftButton(!showAbout)}>
         {showAbout ? (
           <i className="bi bi-dash-circle-fill" />
@@ -24,4 +23,4 @@ export function AboutHeader({ shiftButton, showAbout }: Props) {
   );
 }
 
-export default AboutHeader;
+export default ExpandableHeader;

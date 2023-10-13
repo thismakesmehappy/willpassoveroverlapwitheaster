@@ -3,7 +3,8 @@ import "./css/style.css";
 import FeaturedYear from "./components/featured/FeaturedYear.tsx";
 import StandardList from "./components/standard/StandardList.tsx";
 import { useState } from "react";
-import { About } from "./components/about/About.tsx";
+import { Expandable } from "./components/expandable/Expandable.tsx";
+import About from "./components/About.tsx";
 
 function App() {
   const [numberOfDays, setNumberOfDays] = useState(8);

@@ -162,7 +162,7 @@ hr {
     font-size: 1.2em;
 }
 
-.about-header {
+#about .header {
     background-color: #000;
     color: #fff;
     border-top-right-radius: 10px;
@@ -172,7 +172,7 @@ hr {
     text-transform: uppercase;
 }
 
-.about-header-collapsed {
+#about .header-collapsed {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
