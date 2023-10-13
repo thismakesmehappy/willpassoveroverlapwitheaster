@@ -3,7 +3,6 @@ import "./css/style.css";
 import FeaturedYear from "./components/featured/FeaturedYear.tsx";
 import StandardList from "./components/standard/StandardList.tsx";
 import { useState } from "react";
-import { Expandable } from "./components/expandable/Expandable.tsx";
 import About from "./components/About.tsx";
 
 function App() {

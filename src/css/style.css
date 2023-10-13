@@ -162,7 +162,7 @@ hr {
     font-size: 1.2em;
 }
 
-#about .header {
+#about .expandable-header {
     background-color: #000;
     color: #fff;
     border-top-right-radius: 10px;
@@ -172,27 +172,41 @@ hr {
     text-transform: uppercase;
 }
 
-#about .header-collapsed {
+#about .expandable-header-collapsed {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.about-content {
+.expandable-content {
     padding: 0.75em;
 }
 
-.about-content a {
+.expandable-content a {
     color: inherit;
 }
 
-.about-content p {
+.expandable-content p {
     line-height: 1.35em;
 }
 
-.about-content p:first-of-type {
+.expandable-content p:first-of-type {
     margin-top: 0;
 }
 
-.about-content p:last-of-type {
+.expandable-content p:last-of-type {
     margin-bottom: 0;
+}
+
+#what-is-this, #what-is-this.expandable-header, #what-is-this.expandable-content, #what-is-this div {
+    padding: 0;
+    margin: 0;
+    line-height: 1em;
+    border: 0;
+    font-size: .9em;
+}
+
+#what-is-this {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    margin-bottom: 0.5em;
 }

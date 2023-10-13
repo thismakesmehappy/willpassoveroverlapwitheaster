@@ -3,7 +3,7 @@ interface Props {
 }
 
 export const ExpandableContent = ({ children }: Props) => {
-  return <div className="about-content">{children}</div>;
+  return <div className="expandable-content">{children}</div>;
 };
 
 export default ExpandableContent;

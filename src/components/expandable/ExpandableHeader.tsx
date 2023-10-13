@@ -8,15 +8,17 @@ export function ExpandableHeader({ shiftButton, showAbout, title }: Props) {
   return (
     <div
       className={
-        showAbout ? "header text-center" : "header header-collapsed text-center"
+        showAbout
+          ? "expandable-header text-center"
+          : "expandable-header expandable-header-collapsed text-center"
       }
     >
       {title}{" "}
       <button className="btn btn-link" onClick={() => shiftButton(!showAbout)}>
         {showAbout ? (
-          <i className="bi bi-dash-circle-fill" />
+          <i className="bi bi-dash-circle" />
         ) : (
-          <i className="bi bi-plus-circle-fill" />
+          <i className="bi bi-plus-circle" />
         )}
       </button>
     </div>

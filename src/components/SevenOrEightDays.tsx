@@ -1,5 +1,6 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Props from "./featured/FeaturedYear.tsx";
+import Expandable from "./expandable/Expandable.tsx";
 
 interface Props {
   numberOfDays: number;
@@ -15,18 +16,26 @@ export const SevenOrEightDays = ({ numberOfDays, setNumberOfDays }: Props) => {
           <i className="bi bi-record-circle" />
         ) : (
           <i className="bi bi-circle" />
-        )}
-        &nbsp;7
+        )}{" "}
+        7
       </button>
       <button className="btn btn-link" onClick={() => setNumberOfDays(8)}>
         {numberOfDays === 8 ? (
           <i className="bi bi-record-circle" />
         ) : (
           <i className="bi bi-circle" />
-        )}
-        &nbsp;8
+        )}{" "}
+        8
       </button>
       days
+      <Expandable id="what-is-this" title="What is this?">
+        Outside of Israel, we add an additional day to most Jewish holidays.
+        This is because historically, news of a holiday traveled slow and we
+        weren't always sure we got the exact dates. In Israel, Passover is
+        observed for seven days. Outside of Israel, Passover is observed for
+        eight days, although many Jews outside of Israel consider this archaic
+        and celebrate only seven days.
+      </Expandable>
     </div>
   );
 };
