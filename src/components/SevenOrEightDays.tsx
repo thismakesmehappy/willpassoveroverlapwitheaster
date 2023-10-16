@@ -29,12 +29,11 @@ export const SevenOrEightDays = ({ numberOfDays, setNumberOfDays }: Props) => {
       </button>
       days
       <Expandable id="what-is-this" title="What is this?">
-        Outside of Israel, we add an additional day to most Jewish holidays.
-        This is because historically, news of a holiday traveled slow and we
-        weren't always sure we got the exact dates. In Israel, Passover is
-        observed for seven days. Outside of Israel, Passover is observed for
-        eight days, although many Jews outside of Israel consider this archaic
-        and celebrate only seven days.
+        Originally, Passover lasted 7 days. Because the news of upcoming
+        holidays spread slower outside of Israel, the sages decided to extend
+        the holiday to 8 days in the diaspora. Today, Jews in Israel celebrate 7
+        days while most Jews outside of Israel observe 8 days. Some consider
+        this practice to be archaic and observe 7 days even outside of Israel.
       </Expandable>
     </div>
   );
