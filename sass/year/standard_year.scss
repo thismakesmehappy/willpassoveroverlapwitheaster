@@ -1,0 +1,30 @@
+@use "../mixins";
+@use "../variables";
+@use "../colors";
+@use "../constants";
+
+$step: 100/constants.$number-of-years;
+
+.standard-year {
+  border: variables.$border-style;
+  font-size: variables.$text-regular;
+  border-radius: variables.$border-radius-medium;
+  margin: 1rem 0.25rem;
+  overflow: hidden;
+  color: colors.$secondary-start-dark;
+
+  .header {
+    padding: variables.$padding-small;
+    margin-bottom: 0.75rem;
+    background-color: colors.$secondary-start;
+    color: colors.$secondary;
+  }
+
+  .passover-and-easter-overlap, .select-days {
+    @include mixins.border-bottom-style(colors.$secondary-start);
+  }
+
+  .three-holidays {
+    background-color: colors.$secondary-start-tint;
+  }
+}

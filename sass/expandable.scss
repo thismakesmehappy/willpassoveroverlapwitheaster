@@ -1,0 +1,19 @@
+.expandable-content {
+  padding: 0.75em;
+}
+
+.expandable-content a {
+  color: inherit;
+}
+
+.expandable-content p {
+  line-height: 1.35em;
+}
+
+.expandable-content p:first-of-type {
+  margin-top: 0;
+}
+
+.expandable-content p:last-of-type {
+  margin-bottom: 0;
+}

@@ -1,0 +1,28 @@
+@use "colors";
+@use "variables";
+@use "mixins";
+
+#about {
+  @include mixins.border-style(colors.$main);
+  padding: 0;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: colors.$main-dark;
+
+  .expandable-header {
+    background-color: colors.$main;
+    color: colors.$secondary;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 0.75em;
+    font-family: variables.$slab-stack;
+    text-transform: uppercase;
+  }
+
+  .expandable-header-collapsed {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+}
+

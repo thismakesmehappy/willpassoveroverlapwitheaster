@@ -1,0 +1,10 @@
+@mixin border-style($color:#000) {
+  border: $color solid 1px;
+}
+
+
+@mixin border-bottom-style($color:#000) {
+  border-bottom: $color solid 1px;
+}
+
+

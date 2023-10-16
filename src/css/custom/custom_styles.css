@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,500;0,800;1,200;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@700;900&display=swap");
+.year {
+  font-family: "Hepta Slab", sans-serif;
+  font-size: 1.5rem;
+}
+
+.three-holidays {
+  padding: 0.5rem;
+  line-height: 1.25em;
+}
+
+.overlap {
+  margin-top: 0.25em;
+}
+
+.passover-and-easter-overlap {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  margin: 0;
+  padding: 0.75em;
+}
+
+.btn-link {
+  font-size: inherit !important;
+  color: inherit !important;
+  padding: 0 0.125em !important;
+  margin: inherit !important;
+  text-decoration: inherit !important;
+}
+
+.at-a-glance {
+  font-family: "Hepta Slab", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tight {
+  letter-spacing: -0.5em;
+}
+
+.open {
+  letter-spacing: 0.5em;
+}
+
+/* Common formatting for how we display a single holiday */
+.one-holiday {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.select-days {
+  padding: 0.25em;
+}
+
+.featured-year {
+  border: #007ABB solid 1px;
+  font-size: 1.5rem;
+  padding: 0 !important;
+  margin: 0 auto 1rem auto !important;
+  border-radius: 1rem;
+  overflow: hidden;
+  color: #005988;
+}
+.featured-year .year {
+  font-size: 3rem;
+  line-height: 1em;
+  margin-top: 0.125em;
+  margin-bottom: 0.0625em;
+}
+.featured-year .header {
+  padding-top: 1rem;
+  background-color: #007ABB;
+  color: #fff !important;
+  padding-bottom: 1.5rem;
+}
+.featured-year .passover-and-easter-overlap, .featured-year .select-days {
+  border-bottom: #007ABB solid 1px;
+}
+.featured-year .three-holidays {
+  background-color: #dff4ff;
+  padding: 1.5rem;
+}
+.featured-year .three-holidays {
+  background-color: #dff4ff;
+}
+
+/* Label above featured year to determine if the holidays hav already passed */
+.has-passed, .change-years {
+  font-size: 0.9em;
+  margin: 0;
+  line-height: 1em;
+  padding: 0 0 0.2rem;
+  font-weight: 200;
+}
+
+.change-years {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Buttons below featured year switch year to display */
+.change-year, .change-year:hover, .change-year:active {
+  text-decoration: none;
+  margin: 0;
+  padding: 0 0.5em;
+  line-height: 1em;
+  color: inherit !important;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.standard-year {
+  border: #007ABB solid 1px;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  margin: 1rem 0.25rem;
+  overflow: hidden;
+  color: #004535;
+}
+.standard-year .header {
+  padding: 0.5rem;
+  margin-bottom: 0.75rem;
+  background-color: #008566;
+  color: #fff;
+}
+.standard-year .passover-and-easter-overlap, .standard-year .select-days {
+  border-bottom: #008566 solid 1px;
+}
+.standard-year .three-holidays {
+  background-color: #b4ffed;
+}
+
+#about {
+  border: #007ABB solid 1px;
+  padding: 0;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: #005988;
+}
+#about .expandable-header {
+  background-color: #007ABB;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 0.75em;
+  font-family: "Hepta Slab", sans-serif;
+  text-transform: uppercase;
+}
+#about .expandable-header-collapsed {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.expandable-content {
+  padding: 0.75em;
+}
+
+.expandable-content a {
+  color: inherit;
+}
+
+.expandable-content p {
+  line-height: 1.35em;
+}
+
+.expandable-content p:first-of-type {
+  margin-top: 0;
+}
+
+.expandable-content p:last-of-type {
+  margin-bottom: 0;
+}
+
+#what-is-this, #what-is-this.expandable-header, #what-is-this.expandable-content, #what-is-this div {
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+  border: 0;
+  font-size: 0.9em;
+}
+
+#what-is-this {
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+body {
+  font-family: "Crimson Pro", serif;
+  padding: 2rem;
+}
+
+hr {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 8px solid #007ABB;
+  border-radius: 8px;
+  opacity: 100%;
+}
+
+/*# sourceMappingURL=custom_styles.css.map */

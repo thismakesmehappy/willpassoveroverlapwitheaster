@@ -1,0 +1,67 @@
+@use "../mixins";
+@use "../variables";
+@use "../colors";
+
+.featured-year {
+  @include mixins.border-style(colors.$main);
+  font-size: variables.$text-medium;
+  padding: variables.$padding-null !important;
+  margin: 0 auto 1rem auto !important;
+  border-radius: variables.$border-radius-medium;
+  overflow: hidden;
+  color: colors.$main-dark;
+
+  .year {
+    font-size: variables.$text-xlarge;
+    line-height: 1em;
+    margin-top: .125em;
+    margin-bottom: 0.0625em;
+  }
+
+  .header {
+    padding-top: variables.$padding-medium;
+    background-color: colors.$main;
+    color: colors.$secondary !important;
+    padding-bottom: variables.$padding-large;
+  }
+
+  .passover-and-easter-overlap, .select-days {
+    @include mixins.border-bottom-style(colors.$main);
+  }
+
+  .three-holidays {
+    background-color: colors.$main-tint;
+    padding: variables.$padding-large;
+  }
+
+  .three-holidays {
+    background-color: colors.$main-tint;
+  }
+}
+
+/* Label above featured year to determine if the holidays hav already passed */
+
+.has-passed, .change-years {
+  font-size: .9em;
+  margin: 0;
+  line-height: 1em;
+  padding: 0 0 0.2rem;
+  font-weight: 200;
+}
+
+.change-years {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+/* Buttons below featured year switch year to display */
+
+.change-year, .change-year:hover, .change-year:active {
+  text-decoration: none;
+  margin: 0;
+  padding: 0 .5em;
+  line-height: 1em;
+  color: inherit !important;
+  font-size: inherit;
+  font-weight: inherit;
+}

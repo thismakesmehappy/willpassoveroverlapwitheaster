@@ -1,0 +1,14 @@
+@use 'sass:color';
+
+$main: #007ABB;
+$main-tint: color.scale($main, $lightness: 90%);
+$main-dark: color.adjust($main, $blackness: 20%);
+
+$secondary: #fff;
+
+$secondary-start: #008566;
+$secondary-start-tint: color.scale($secondary-start, $lightness: 80%);
+$secondary-start-dark: color.adjust($secondary-start, $blackness: 25%);
+$secondary-end: #D84806;
+$secondary-end-tint: color.scale($secondary-end, $lightness: 80%);
+$secondary-end-dark: color.adjust($secondary-end, $blackness: 25%);

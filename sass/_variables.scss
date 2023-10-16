@@ -1,0 +1,21 @@
+@use "colors";
+
+$serif-stack: 'Crimson Pro', serif;
+$slab-stack: "Hepta Slab", sans-serif;
+$border-style: colors.$main solid 1px;
+
+
+$text-small: 0.9rem;
+$text-regular: 1.2rem;
+$text-medium: 1.5rem;
+$text-large: 2rem;
+$text-xlarge: 3rem;
+
+$padding-null: 0;
+$padding-small: 0.5rem;
+$padding-medium: 1rem;
+$padding-large: 1.5rem;
+
+$border-radius-small: 0.5rem;
+$border-radius-medium: 1rem;
+$border-radius-large: 1.5rem;
