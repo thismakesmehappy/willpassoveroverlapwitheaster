@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "../mixins";
 @use "../variables";
 @use "../colors";
@@ -6,25 +7,51 @@
 $step: 100/constants.$number-of-years;
 
 .standard-year {
-  border: variables.$border-style;
+  //border: variables.$border-style;
   font-size: variables.$text-regular;
   border-radius: variables.$border-radius-medium;
   margin: 1rem 0.25rem;
   overflow: hidden;
-  color: colors.$secondary-start-dark;
+  //color: colors.$secondary-start-dark;
 
   .header {
     padding: variables.$padding-small;
     margin-bottom: 0.75rem;
-    background-color: colors.$secondary-start;
+    //background-color: colors.$secondary-start;
     color: colors.$secondary;
   }
 
   .passover-and-easter-overlap, .select-days {
-    @include mixins.border-bottom-style(colors.$secondary-start);
+    //@include mixins.border-bottom-style(colors.$secondary-start);
   }
 
   .three-holidays {
-    background-color: colors.$secondary-start-tint;
+    //background-color: colors.$secondary-start-tint;
+  }
+}
+
+@for $i from 1 through constants.$number-of-years {
+  $scale: 100 - $i * $step;
+  $mixed-color: color.mix(colors.$secondary-start, colors.$secondary-end, $scale);
+  $mixed-color-dark: color.mix(colors.$secondary-start-dark, colors.$secondary-end-dark, $scale);
+  $mixed-color-tint: color.mix(colors.$secondary-start-tint, colors.$secondary-end-tint, $scale);
+  .standard-year-#{$i} {
+    color: $mixed-color-dark;
+
+    .standard-year {
+      @include mixins.border-style($mixed-color);
+    }
+
+    .header {
+      background-color: $mixed-color;
+    }
+
+    .passover-and-easter-overlap, .select-days {
+      @include mixins.border-bottom-style($mixed-color);
+    }
+
+    .three-holidays {
+      background-color: $mixed-color-tint;
+    }
   }
 }

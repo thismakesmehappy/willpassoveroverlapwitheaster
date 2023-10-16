@@ -112,24 +112,206 @@
 }
 
 .standard-year {
-  border: #007ABB solid 1px;
   font-size: 1.2rem;
   border-radius: 1rem;
   margin: 1rem 0.25rem;
   overflow: hidden;
-  color: #004535;
 }
 .standard-year .header {
   padding: 0.5rem;
   margin-bottom: 0.75rem;
-  background-color: #008566;
   color: #fff;
 }
-.standard-year .passover-and-easter-overlap, .standard-year .select-days {
-  border-bottom: #008566 solid 1px;
+.standard-year-1 {
+  color: #0d4431;
 }
-.standard-year .three-holidays {
-  background-color: #b4ffed;
+.standard-year-1 .standard-year {
+  border: #12805e solid 1px;
+}
+.standard-year-1 .header {
+  background-color: #12805e;
+}
+.standard-year-1 .passover-and-easter-overlap, .standard-year-1 .select-days {
+  border-bottom: #12805e solid 1px;
+}
+.standard-year-1 .three-holidays {
+  background-color: #bafcea;
+}
+
+.standard-year-2 {
+  color: #19422d;
+}
+.standard-year-2 .standard-year {
+  border: #247b56 solid 1px;
+}
+.standard-year-2 .header {
+  background-color: #247b56;
+}
+.standard-year-2 .passover-and-easter-overlap, .standard-year-2 .select-days {
+  border-bottom: #247b56 solid 1px;
+}
+.standard-year-2 .three-holidays {
+  background-color: #c0f9e7;
+}
+
+.standard-year-3 {
+  color: #264129;
+}
+.standard-year-3 .standard-year {
+  border: #36764e solid 1px;
+}
+.standard-year-3 .header {
+  background-color: #36764e;
+}
+.standard-year-3 .passover-and-easter-overlap, .standard-year-3 .select-days {
+  border-bottom: #36764e solid 1px;
+}
+.standard-year-3 .three-holidays {
+  background-color: #c6f5e4;
+}
+
+.standard-year-4 {
+  color: #333f25;
+}
+.standard-year-4 .standard-year {
+  border: #487146 solid 1px;
+}
+.standard-year-4 .header {
+  background-color: #487146;
+}
+.standard-year-4 .passover-and-easter-overlap, .standard-year-4 .select-days {
+  border-bottom: #487146 solid 1px;
+}
+.standard-year-4 .three-holidays {
+  background-color: #ccf2e0;
+}
+
+.standard-year-5 {
+  color: #3f3e21;
+}
+.standard-year-5 .standard-year {
+  border: #5a6c3e solid 1px;
+}
+.standard-year-5 .header {
+  background-color: #5a6c3e;
+}
+.standard-year-5 .passover-and-easter-overlap, .standard-year-5 .select-days {
+  border-bottom: #5a6c3e solid 1px;
+}
+.standard-year-5 .three-holidays {
+  background-color: #d2efdd;
+}
+
+.standard-year-6 {
+  color: #4c3d1e;
+}
+.standard-year-6 .standard-year {
+  border: #6c6736 solid 1px;
+}
+.standard-year-6 .header {
+  background-color: #6c6736;
+}
+.standard-year-6 .passover-and-easter-overlap, .standard-year-6 .select-days {
+  border-bottom: #6c6736 solid 1px;
+}
+.standard-year-6 .three-holidays {
+  background-color: #d9ecda;
+}
+
+.standard-year-7 {
+  color: #593b1a;
+}
+.standard-year-7 .standard-year {
+  border: #7e612e solid 1px;
+}
+.standard-year-7 .header {
+  background-color: #7e612e;
+}
+.standard-year-7 .passover-and-easter-overlap, .standard-year-7 .select-days {
+  border-bottom: #7e612e solid 1px;
+}
+.standard-year-7 .three-holidays {
+  background-color: #dfe8d7;
+}
+
+.standard-year-8 {
+  color: #653a16;
+}
+.standard-year-8 .standard-year {
+  border: #905c26 solid 1px;
+}
+.standard-year-8 .header {
+  background-color: #905c26;
+}
+.standard-year-8 .passover-and-easter-overlap, .standard-year-8 .select-days {
+  border-bottom: #905c26 solid 1px;
+}
+.standard-year-8 .three-holidays {
+  background-color: #e5e5d4;
+}
+
+.standard-year-9 {
+  color: #723812;
+}
+.standard-year-9 .standard-year {
+  border: #a2571e solid 1px;
+}
+.standard-year-9 .header {
+  background-color: #a2571e;
+}
+.standard-year-9 .passover-and-easter-overlap, .standard-year-9 .select-days {
+  border-bottom: #a2571e solid 1px;
+}
+.standard-year-9 .three-holidays {
+  background-color: #ebe2d1;
+}
+
+.standard-year-10 {
+  color: #7f370e;
+}
+.standard-year-10 .standard-year {
+  border: #b45216 solid 1px;
+}
+.standard-year-10 .header {
+  background-color: #b45216;
+}
+.standard-year-10 .passover-and-easter-overlap, .standard-year-10 .select-days {
+  border-bottom: #b45216 solid 1px;
+}
+.standard-year-10 .three-holidays {
+  background-color: #f1dfcd;
+}
+
+.standard-year-11 {
+  color: #8b350a;
+}
+.standard-year-11 .standard-year {
+  border: #c64d0e solid 1px;
+}
+.standard-year-11 .header {
+  background-color: #c64d0e;
+}
+.standard-year-11 .passover-and-easter-overlap, .standard-year-11 .select-days {
+  border-bottom: #c64d0e solid 1px;
+}
+.standard-year-11 .three-holidays {
+  background-color: #f7dbca;
+}
+
+.standard-year-12 {
+  color: #983406;
+}
+.standard-year-12 .standard-year {
+  border: #d84806 solid 1px;
+}
+.standard-year-12 .header {
+  background-color: #d84806;
+}
+.standard-year-12 .passover-and-easter-overlap, .standard-year-12 .select-days {
+  border-bottom: #d84806 solid 1px;
+}
+.standard-year-12 .three-holidays {
+  background-color: #fdd8c7;
 }
 
 #about {
