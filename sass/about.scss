@@ -3,14 +3,14 @@
 @use "mixins";
 
 #about {
-  @include mixins.border-style(colors.$main);
+  @include mixins.border-style(colors.$display);
   padding: 0;
   border-radius: 10px;
   font-size: 1.2em;
-  color: colors.$main-dark;
+  color: colors.$display-dark;
 
   .expandable-header {
-    background-color: colors.$main;
+    background-color: colors.$display;
     color: colors.$secondary;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;

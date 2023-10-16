@@ -22,28 +22,6 @@
   padding: 0.75em;
 }
 
-.btn-link {
-  font-size: inherit !important;
-  color: inherit !important;
-  padding: 0 0.125em !important;
-  margin: inherit !important;
-  text-decoration: inherit !important;
-}
-
-.at-a-glance {
-  font-family: "Hepta Slab", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.tight {
-  letter-spacing: -0.5em;
-}
-
-.open {
-  letter-spacing: 0.5em;
-}
-
 /* Common formatting for how we display a single holiday */
 .one-holiday {
   margin: 0 !important;
@@ -55,13 +33,13 @@
 }
 
 .featured-year {
-  border: #007ABB solid 1px;
+  border: #01597F solid 1px;
   font-size: 1.5rem;
   padding: 0 !important;
   margin: 0 auto 1rem auto !important;
   border-radius: 1rem;
   overflow: hidden;
-  color: #005988;
+  color: #00435B;
 }
 .featured-year .year {
   font-size: 3rem;
@@ -71,19 +49,19 @@
 }
 .featured-year .header {
   padding-top: 1rem;
-  background-color: #007ABB;
+  background-color: #01597F;
   color: #fff !important;
   padding-bottom: 1.5rem;
 }
 .featured-year .passover-and-easter-overlap, .featured-year .select-days {
-  border-bottom: #007ABB solid 1px;
+  border-bottom: #01597F solid 1px;
 }
 .featured-year .three-holidays {
-  background-color: #dff4ff;
+  background-color: #DBF1FC;
   padding: 1.5rem;
 }
 .featured-year .three-holidays {
-  background-color: #dff4ff;
+  background-color: #DBF1FC;
 }
 
 /* Label above featured year to determine if the holidays hav already passed */
@@ -123,206 +101,206 @@
   color: #fff;
 }
 .standard-year-1 {
-  color: #0d4431;
+  color: #0a4630;
 }
 .standard-year-1 .standard-year {
-  border: #12805e solid 1px;
+  border: #0e6a4d solid 1px;
 }
 .standard-year-1 .header {
-  background-color: #12805e;
+  background-color: #0e6a4d;
 }
 .standard-year-1 .passover-and-easter-overlap, .standard-year-1 .select-days {
-  border-bottom: #12805e solid 1px;
+  border-bottom: #0e6a4d solid 1px;
 }
 .standard-year-1 .three-holidays {
-  background-color: #bafcea;
+  background-color: #f1f7f1;
 }
 
 .standard-year-2 {
-  color: #19422d;
+  color: #14432e;
 }
 .standard-year-2 .standard-year {
-  border: #247b56 solid 1px;
+  border: #1c654a solid 1px;
 }
 .standard-year-2 .header {
-  background-color: #247b56;
+  background-color: #1c654a;
 }
 .standard-year-2 .passover-and-easter-overlap, .standard-year-2 .select-days {
-  border-bottom: #247b56 solid 1px;
+  border-bottom: #1c654a solid 1px;
 }
 .standard-year-2 .three-holidays {
-  background-color: #c0f9e7;
+  background-color: #f2f6f1;
 }
 
 .standard-year-3 {
-  color: #264129;
+  color: #1d402c;
 }
 .standard-year-3 .standard-year {
-  border: #36764e solid 1px;
+  border: #2a6146 solid 1px;
 }
 .standard-year-3 .header {
-  background-color: #36764e;
+  background-color: #2a6146;
 }
 .standard-year-3 .passover-and-easter-overlap, .standard-year-3 .select-days {
-  border-bottom: #36764e solid 1px;
+  border-bottom: #2a6146 solid 1px;
 }
 .standard-year-3 .three-holidays {
-  background-color: #c6f5e4;
+  background-color: #f4f5f0;
 }
 
 .standard-year-4 {
-  color: #333f25;
+  color: #273d29;
 }
 .standard-year-4 .standard-year {
-  border: #487146 solid 1px;
+  border: #385c42 solid 1px;
 }
 .standard-year-4 .header {
-  background-color: #487146;
+  background-color: #385c42;
 }
 .standard-year-4 .passover-and-easter-overlap, .standard-year-4 .select-days {
-  border-bottom: #487146 solid 1px;
+  border-bottom: #385c42 solid 1px;
 }
 .standard-year-4 .three-holidays {
-  background-color: #ccf2e0;
+  background-color: #f5f4f0;
 }
 
 .standard-year-5 {
-  color: #3f3e21;
+  color: #303a27;
 }
 .standard-year-5 .standard-year {
-  border: #5a6c3e solid 1px;
+  border: #46583e solid 1px;
 }
 .standard-year-5 .header {
-  background-color: #5a6c3e;
+  background-color: #46583e;
 }
 .standard-year-5 .passover-and-easter-overlap, .standard-year-5 .select-days {
-  border-bottom: #5a6c3e solid 1px;
+  border-bottom: #46583e solid 1px;
 }
 .standard-year-5 .three-holidays {
-  background-color: #d2efdd;
+  background-color: #f6f3ef;
 }
 
 .standard-year-6 {
-  color: #4c3d1e;
+  color: #3a3725;
 }
 .standard-year-6 .standard-year {
-  border: #6c6736 solid 1px;
+  border: #54533b solid 1px;
 }
 .standard-year-6 .header {
-  background-color: #6c6736;
+  background-color: #54533b;
 }
 .standard-year-6 .passover-and-easter-overlap, .standard-year-6 .select-days {
-  border-bottom: #6c6736 solid 1px;
+  border-bottom: #54533b solid 1px;
 }
 .standard-year-6 .three-holidays {
-  background-color: #d9ecda;
+  background-color: #f7f2ef;
 }
 
 .standard-year-7 {
-  color: #593b1a;
+  color: #433323;
 }
 .standard-year-7 .standard-year {
-  border: #7e612e solid 1px;
+  border: #624f37 solid 1px;
 }
 .standard-year-7 .header {
-  background-color: #7e612e;
+  background-color: #624f37;
 }
 .standard-year-7 .passover-and-easter-overlap, .standard-year-7 .select-days {
-  border-bottom: #7e612e solid 1px;
+  border-bottom: #624f37 solid 1px;
 }
 .standard-year-7 .three-holidays {
-  background-color: #dfe8d7;
+  background-color: #f8f1ee;
 }
 
 .standard-year-8 {
-  color: #653a16;
+  color: #4c3021;
 }
 .standard-year-8 .standard-year {
-  border: #905c26 solid 1px;
+  border: #704a33 solid 1px;
 }
 .standard-year-8 .header {
-  background-color: #905c26;
+  background-color: #704a33;
 }
 .standard-year-8 .passover-and-easter-overlap, .standard-year-8 .select-days {
-  border-bottom: #905c26 solid 1px;
+  border-bottom: #704a33 solid 1px;
 }
 .standard-year-8 .three-holidays {
-  background-color: #e5e5d4;
+  background-color: #f9f0ed;
 }
 
 .standard-year-9 {
-  color: #723812;
+  color: #562d1f;
 }
 .standard-year-9 .standard-year {
-  border: #a2571e solid 1px;
+  border: #7e462f solid 1px;
 }
 .standard-year-9 .header {
-  background-color: #a2571e;
+  background-color: #7e462f;
 }
 .standard-year-9 .passover-and-easter-overlap, .standard-year-9 .select-days {
-  border-bottom: #a2571e solid 1px;
+  border-bottom: #7e462f solid 1px;
 }
 .standard-year-9 .three-holidays {
-  background-color: #ebe2d1;
+  background-color: #fbefed;
 }
 
 .standard-year-10 {
-  color: #7f370e;
+  color: #5f2a1c;
 }
 .standard-year-10 .standard-year {
-  border: #b45216 solid 1px;
+  border: #8c412c solid 1px;
 }
 .standard-year-10 .header {
-  background-color: #b45216;
+  background-color: #8c412c;
 }
 .standard-year-10 .passover-and-easter-overlap, .standard-year-10 .select-days {
-  border-bottom: #b45216 solid 1px;
+  border-bottom: #8c412c solid 1px;
 }
 .standard-year-10 .three-holidays {
-  background-color: #f1dfcd;
+  background-color: #fceeec;
 }
 
 .standard-year-11 {
-  color: #8b350a;
+  color: #69271a;
 }
 .standard-year-11 .standard-year {
-  border: #c64d0e solid 1px;
+  border: #9a3d28 solid 1px;
 }
 .standard-year-11 .header {
-  background-color: #c64d0e;
+  background-color: #9a3d28;
 }
 .standard-year-11 .passover-and-easter-overlap, .standard-year-11 .select-days {
-  border-bottom: #c64d0e solid 1px;
+  border-bottom: #9a3d28 solid 1px;
 }
 .standard-year-11 .three-holidays {
-  background-color: #f7dbca;
+  background-color: #fdedec;
 }
 
 .standard-year-12 {
-  color: #983406;
+  color: #722418;
 }
 .standard-year-12 .standard-year {
-  border: #d84806 solid 1px;
+  border: #a83824 solid 1px;
 }
 .standard-year-12 .header {
-  background-color: #d84806;
+  background-color: #a83824;
 }
 .standard-year-12 .passover-and-easter-overlap, .standard-year-12 .select-days {
-  border-bottom: #d84806 solid 1px;
+  border-bottom: #a83824 solid 1px;
 }
 .standard-year-12 .three-holidays {
-  background-color: #fdd8c7;
+  background-color: #feeceb;
 }
 
 #about {
-  border: #007ABB solid 1px;
+  border: #743981 solid 1px;
   padding: 0;
   border-radius: 10px;
   font-size: 1.2em;
-  color: #005988;
+  color: #361F47;
 }
 #about .expandable-header {
-  background-color: #007ABB;
+  background-color: #743981;
   color: #fff;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -378,9 +356,32 @@ hr {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  border: 8px solid #007ABB;
+  border: 8px solid #743981;
   border-radius: 8px;
   opacity: 100%;
+}
+
+.btn-link {
+  font-size: inherit !important;
+  color: inherit !important;
+  padding: 0 0.125em !important;
+  margin: inherit !important;
+  text-decoration: inherit !important;
+}
+
+.at-a-glance {
+  font-family: "Hepta Slab", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #743981;
+}
+
+.tight {
+  letter-spacing: -0.5em;
+}
+
+.open {
+  letter-spacing: 0.5em;
 }
 
 /*# sourceMappingURL=custom_styles.css.map */

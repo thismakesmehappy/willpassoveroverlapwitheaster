@@ -18,7 +18,30 @@ hr {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  border: 8px solid colors.$main;
+  border: 8px solid colors.$display;
   border-radius: 8px;
   opacity: 100%;
+}
+
+.btn-link {
+  font-size: inherit !important;
+  color: inherit !important;
+  padding: 0 .125em !important;
+  margin: inherit !important;
+  text-decoration: inherit !important;
+}
+
+.at-a-glance {
+  font-family: variables.$slab-stack;
+  text-transform: uppercase;
+  text-align: center;
+  color: colors.$display;
+}
+
+.tight {
+  letter-spacing: -.5em;
+}
+
+.open {
+  letter-spacing: .5em;
 }

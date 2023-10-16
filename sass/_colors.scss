@@ -1,14 +1,19 @@
 @use 'sass:color';
 
-$main: #007ABB;
-$main-tint: color.scale($main, $lightness: 90%);
-$main-dark: color.adjust($main, $blackness: 20%);
+$main: #01597F;
+$main-tint: #DBF1FC;
+$main-dark: #00435B;
+
+$display: #743981;
+$display-tint: #FDEEF5;
+$display-dark: #361F47;
 
 $secondary: #fff;
 
-$secondary-start: #008566;
-$secondary-start-tint: color.scale($secondary-start, $lightness: 80%);
-$secondary-start-dark: color.adjust($secondary-start, $blackness: 25%);
-$secondary-end: #D84806;
-$secondary-end-tint: color.scale($secondary-end, $lightness: 80%);
-$secondary-end-dark: color.adjust($secondary-end, $blackness: 25%);
+$secondary-start: #006E51;
+$secondary-start-tint: #F0F8F2;
+$secondary-start-dark: #014932;
+
+$secondary-end: #A83824;
+$secondary-end-tint: #FEECEB;
+$secondary-end-dark: #722418;
