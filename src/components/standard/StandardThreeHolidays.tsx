@@ -1,6 +1,6 @@
 import { PassoverAndEaster } from "../../helpers/getHolidaysForYear.ts";
 import { getThreeHolidays } from "../../helpers/getThreeHolidays.ts";
-import { OneHolidayHorizonal } from "../OneHolidayHorizonal.tsx";
+import { OneHolidayHorizontal } from "../OneHolidayHorizontal.tsx";
 
 interface Props {
   holidays: PassoverAndEaster;
@@ -11,12 +11,11 @@ const StandardThreeHolidays = ({ holidays }: Props) => {
   return (
     <div className="three-holidays">
       {threeHolidays.map((item) => (
-        <div
-          className="one-holiday"
+        <OneHolidayHorizontal
+          holiday={item}
+          short={true}
           key={"oneHoliday" + item.holiday + item.date}
-        >
-          <OneHolidayHorizonal holiday={item} short={true} />
-        </div>
+        />
       ))}
     </div>
   );

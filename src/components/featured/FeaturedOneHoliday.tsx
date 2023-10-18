@@ -1,5 +1,5 @@
 import OneHolidayVertical from "../OneHolidayVertical.tsx";
-import { OneHolidayHorizonal } from "../OneHolidayHorizonal.tsx";
+import { OneHolidayHorizontal } from "../OneHolidayHorizontal.tsx";
 import { DateAndHoliday } from "../../helpers/DateAndHoliday.ts";
 
 interface Props {
@@ -9,12 +9,16 @@ interface Props {
 const FeaturedOneHoliday = ({ holiday }: Props) => {
   return (
     <>
-      <div className="col col-12 col-md-4 d-none d-md-block">
-        <OneHolidayVertical holiday={holiday} short={false} />
-      </div>
-      <div className="col col-12 col-md-4 d-block d-md-none">
-        <OneHolidayHorizonal holiday={holiday} short={false} />
-      </div>
+      <OneHolidayVertical
+        holiday={holiday}
+        short={false}
+        className="d-none d-md-block"
+      />
+      <OneHolidayHorizontal
+        holiday={holiday}
+        short={false}
+        className="d-block d-md-none"
+      />
     </>
   );
 };

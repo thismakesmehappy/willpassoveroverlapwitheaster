@@ -4,13 +4,14 @@ import { DateAndHoliday } from "../helpers/DateAndHoliday.ts";
 interface Props {
   holiday: DateAndHoliday;
   short: boolean | null;
+  className?: string;
 }
 
-export function OneHolidayHorizonal({ holiday, short }: Props) {
+export function OneHolidayHorizontal({ holiday, short, className }: Props) {
   return (
-    <div className="one-holiday one-holiday-horizontal">
+    <p className={"one-holiday one-holiday-horizontal" + className}>
       {holiday.holiday} <i className="bi bi-arrow-right"></i>{" "}
       {short ? formatDatesShort(holiday.date) : formatDatesLong(holiday.date)}
-    </div>
+    </p>
   );
 }
