@@ -1,6 +1,7 @@
 @use "variables/colors";
-@use "variables/tokens";
+@use "variables/framing";
 @use "variables/mixins";
+@use "variables/type";
 
 $component-color: colors.$display;
 $component-color-tint: colors.$display-tint;
@@ -15,16 +16,16 @@ $component-color-dark: colors.$display-dark;
   .expandable-header {
     background-color: colors.$display;
     color: colors.$secondary;
-    border-top-right-radius: tokens.$border-radius-card;
-    border-top-left-radius: tokens.$border-radius-card;
+    border-top-right-radius: framing.$border-radius-card;
+    border-top-left-radius: framing.$border-radius-card;
     padding: 0.75em;
-    font-family: tokens.$slab-stack;
+    font-family: type.$slab-stack;
     text-transform: uppercase;
   }
 
   .expandable-header-collapsed {
-    border-bottom-right-radius: tokens.$border-radius-card;
-    border-bottom-left-radius: tokens.$border-radius-card;
+    border-bottom-right-radius: framing.$border-radius-card;
+    border-bottom-left-radius: framing.$border-radius-card;
   }
 
 }

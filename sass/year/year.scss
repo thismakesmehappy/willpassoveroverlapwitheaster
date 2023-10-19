@@ -1,15 +1,16 @@
-@use "../variables/tokens";
+@use "../variables/framing";
 @use "../variables/colors";
 @use "../variables/mixins";
+@use "../variables/type";
 
 .year {
-  font-family: tokens.$slab-stack;
-  font-size: tokens.$text-medium;
+  font-family: type.$slab-stack;
+  font-size: type.$text-medium;
 }
 
 .three-holidays {
   @include mixins.book;
-  padding: tokens.$padding-medium;
+  padding: framing.$padding-medium;
 }
 
 .overlap {

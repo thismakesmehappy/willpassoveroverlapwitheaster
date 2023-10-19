@@ -1,6 +1,6 @@
 @use "sass:color";
 @use "../variables/mixins";
-@use "../variables/tokens";
+@use "../variables/framing";
 @use "../variables/colors";
 @use "../variables/constants";
 
@@ -10,10 +10,10 @@ $step: 100/constants.$number-of-years;
   @include mixins.card();
   padding: 0;
   overflow: hidden;
-  margin-bottom: tokens.$padding-large;
+  margin-bottom: framing.$padding-large;
 
   .header {
-    padding: tokens.$padding-small;
+    padding: framing.$padding-small;
     margin-bottom: 0.75rem;
     color: colors.$secondary;
   }

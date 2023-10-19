@@ -1,6 +1,7 @@
 @use "../variables/mixins";
-@use "../variables/tokens";
+@use "../variables/framing";
 @use "../variables/colors";
+@use "../variables/type";
 
 $component-color: colors.$main;
 $component-color-tint: colors.$main-tint;
@@ -8,24 +9,24 @@ $component-color-dark: colors.$main-dark;
 
 .featured-year {
   @include mixins.card($component-color);
-  font-size: tokens.$text-medium;
-  padding: tokens.$padding-null !important;
+  font-size: type.$text-medium;
+  padding: framing.$padding-null !important;
   margin: 0 auto 1rem auto !important;
   overflow: hidden;
   color: $component-color-dark;
 
   .year {
-    font-size: tokens.$text-xlarge;
+    font-size: type.$text-xlarge;
     line-height: 1em;
     margin-top: .125em;
     margin-bottom: 0.0625em;
   }
 
   .header {
-    padding-top: tokens.$padding-medium;
+    padding-top: framing.$padding-medium;
     background-color: $component-color;
     color: colors.$secondary !important;
-    padding-bottom: tokens.$padding-large;
+    padding-bottom: framing.$padding-large;
   }
 
   .passover-and-easter-overlap, .select-days {
@@ -34,12 +35,12 @@ $component-color-dark: colors.$main-dark;
 
   .select-days {
     @include mixins.book;
-    padding: tokens.$padding-medium;
+    padding: framing.$padding-medium;
   }
 
   .three-holidays {
     background-color: $component-color-tint;
-    padding: tokens.$padding-large;
+    padding: framing.$padding-large;
   }
 
   .three-holidays {

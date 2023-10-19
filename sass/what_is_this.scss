@@ -1,5 +1,5 @@
 @use 'variables/mixins';
-@use 'variables/tokens';
+@use 'variables/framing';
 @use 'variables/colors';
 
 #what-is-this, #what-is-this.expandable-header, #what-is-this.expandable-content, #what-is-this div {
@@ -7,11 +7,11 @@
 }
 
 #what-is-this {
-  margin-top: tokens.$padding-tiny;
+  margin-top: framing.$padding-tiny;
 }
 
 #what-is-this .expandable-header {
   display: inline-block;
-  padding: tokens.$padding-small tokens.$padding-tiny 0 tokens.$padding-small;
+  padding: framing.$padding-small framing.$padding-tiny 0 framing.$padding-small;
   @include mixins.border-top-style(colors.$main-dark);
 }

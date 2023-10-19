@@ -1,4 +1,5 @@
-@use "tokens";
+@use "framing";
+@use "type";
 
 $borer-style: solid 1px;
 
@@ -15,8 +16,8 @@ $borer-style: solid 1px;
 }
 
 @mixin book {
-  font-size: tokens.$text-book;
-  line-height: tokens.$line-height-book;
+  font-size: type.$text-book;
+  line-height: type.$line-height-book;
   p:first-of-type {
     margin-top: 0;
   }
@@ -26,8 +27,8 @@ $borer-style: solid 1px;
 }
 
 @mixin card($color:#000) {
-  padding: tokens.$padding-large;
-  border-radius: tokens.$border-radius-large;
+  padding: framing.$padding-large;
+  border-radius: framing.$border-radius-large;
   @include border-style($color);
 }
 
