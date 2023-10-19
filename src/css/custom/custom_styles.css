@@ -6,8 +6,15 @@
 }
 
 .three-holidays {
-  padding: 0.5rem;
-  line-height: 1.25em;
+  font-size: 1.2rem;
+  line-height: 1.35em;
+  padding: 1rem;
+}
+.three-holidays p:first-of-type {
+  margin-top: 0;
+}
+.three-holidays p:last-of-type {
+  margin-bottom: 0;
 }
 
 .overlap {
@@ -33,11 +40,12 @@
 }
 
 .featured-year {
+  padding: 1.5rem;
+  border-radius: 1.25rem;
   border: #01597F solid 1px;
   font-size: 1.5rem;
   padding: 0 !important;
   margin: 0 auto 1rem auto !important;
-  border-radius: 1rem;
   overflow: hidden;
   color: #00435B;
 }
@@ -55,6 +63,17 @@
 }
 .featured-year .passover-and-easter-overlap, .featured-year .select-days {
   border-bottom: #01597F solid 1px;
+}
+.featured-year .select-days {
+  font-size: 1.2rem;
+  line-height: 1.35em;
+  padding: 1rem;
+}
+.featured-year .select-days p:first-of-type {
+  margin-top: 0;
+}
+.featured-year .select-days p:last-of-type {
+  margin-bottom: 0;
 }
 .featured-year .three-holidays {
   background-color: #DBF1FC;
@@ -90,17 +109,18 @@
 }
 
 .standard-year {
-  font-size: 1.2rem;
-  border-radius: 1rem;
-  margin: 1rem 0.25rem;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  border: #000 solid 1px;
+  padding: 0;
   overflow: hidden;
+  margin-bottom: 1.5rem;
 }
 .standard-year .header {
   padding: 0.5rem;
   margin-bottom: 0.75rem;
   color: #fff;
 }
-
 .standard-year-1 {
   color: #0a4630;
 }
@@ -294,24 +314,32 @@
 }
 
 #about {
+  padding: 1.5rem;
+  border-radius: 1.25rem;
   border: #743981 solid 1px;
   padding: 0;
-  border-radius: 10px;
-  font-size: 1.2em;
   color: #361F47;
+  font-size: 1.2rem;
+  line-height: 1.35em;
+}
+#about p:first-of-type {
+  margin-top: 0;
+}
+#about p:last-of-type {
+  margin-bottom: 0;
 }
 #about .expandable-header {
   background-color: #743981;
   color: #fff;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-top-right-radius: 1.25rem;
+  border-top-left-radius: 1.25rem;
   padding: 0.75em;
   font-family: "Hepta Slab", sans-serif;
   text-transform: uppercase;
 }
 #about .expandable-header-collapsed {
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
 }
 
 .expandable-content {
@@ -335,17 +363,24 @@
 }
 
 #what-is-this, #what-is-this.expandable-header, #what-is-this.expandable-content, #what-is-this div {
-  padding: 0;
-  margin: 0;
-  line-height: 1em;
-  border: 0;
-  font-size: 0.9em;
+  font-size: 1.2rem;
+  line-height: 1.35em;
+}
+#what-is-this p:first-of-type, #what-is-this.expandable-header p:first-of-type, #what-is-this.expandable-content p:first-of-type, #what-is-this div p:first-of-type {
+  margin-top: 0;
+}
+#what-is-this p:last-of-type, #what-is-this.expandable-header p:last-of-type, #what-is-this.expandable-content p:last-of-type, #what-is-this div p:last-of-type {
+  margin-bottom: 0;
 }
 
 #what-is-this {
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  margin-bottom: 0.5em;
+  margin-top: 0.25rem;
+}
+
+#what-is-this .expandable-header {
+  display: inline-block;
+  padding: 0.5rem 0.25rem 0 0.5rem;
+  border-top: #00435B solid 1px;
 }
 
 body {

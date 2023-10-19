@@ -4,11 +4,13 @@ import { PassoverAndEaster } from "../../helpers/getHolidaysForYear.ts";
 
 interface Props {
   holiday: PassoverAndEaster;
+  className?: string;
 }
 
-export const StandardYear = ({ holiday }: Props) => {
+export const StandardYear = ({ holiday, className }: Props) => {
+  const classes = "text-center standard-year " + className;
   return (
-    <div className="standard-year">
+    <div className={classes}>
       <div className="header">
         <div className="year">{holiday.year}</div>
       </div>

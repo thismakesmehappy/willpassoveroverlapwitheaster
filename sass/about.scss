@@ -1,27 +1,30 @@
-@use "colors";
-@use "variables";
-@use "mixins";
+@use "variables/colors";
+@use "variables/tokens";
+@use "variables/mixins";
+
+$component-color: colors.$display;
+$component-color-tint: colors.$display-tint;
+$component-color-dark: colors.$display-dark;
 
 #about {
-  @include mixins.border-style(colors.$display);
+  @include mixins.card($component-color);
   padding: 0;
-  border-radius: 10px;
-  font-size: 1.2em;
-  color: colors.$display-dark;
+  color: $component-color-dark;
+  @include mixins.book;
 
   .expandable-header {
     background-color: colors.$display;
     color: colors.$secondary;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: tokens.$border-radius-card;
+    border-top-left-radius: tokens.$border-radius-card;
     padding: 0.75em;
-    font-family: variables.$slab-stack;
+    font-family: tokens.$slab-stack;
     text-transform: uppercase;
   }
 
   .expandable-header-collapsed {
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: tokens.$border-radius-card;
+    border-bottom-left-radius: tokens.$border-radius-card;
   }
 
 }

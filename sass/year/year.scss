@@ -1,15 +1,15 @@
-@use "../variables";
-@use "../colors";
-@use "../mixins";
+@use "../variables/tokens";
+@use "../variables/colors";
+@use "../variables/mixins";
 
 .year {
-  font-family: variables.$slab-stack;
-  font-size: variables.$text-medium;
+  font-family: tokens.$slab-stack;
+  font-size: tokens.$text-medium;
 }
 
 .three-holidays {
-  padding: variables.$padding-small;
-  line-height: 1.25em;
+  @include mixins.book;
+  padding: tokens.$padding-medium;
 }
 
 .overlap {
@@ -28,12 +28,6 @@
 .one-holiday {
   margin: 0 !important;
   padding: 0 !important;
-}
-
-.one-holiday-horizontal {
-}
-
-.one-holiday-vertical {
 }
 
 .select-days {

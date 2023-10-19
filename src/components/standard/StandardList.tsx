@@ -13,15 +13,15 @@ const StandardList = ({ numberOfDays }: Props) => {
       <div className="at-a-glance h2">{numberOfYears} years at a glance</div>
       <div className="row">
         {listOfHolidays.map((holiday, index) => {
-          const classes =
-            "col col-12 col-md-6 col-lg-4 col-xl-3 text-center " +
-            "standard-year-" +
-            (index + 1);
           return (
-            <div className={classes} key={"holiday" + holiday.year}>
+            <div
+              className="col col-12 col-md-6 col-lg-4 col-xl-3"
+              key={"holiday" + holiday.year}
+            >
               <StandardYear
                 holiday={holiday}
                 key={"standardyear" + holiday.year}
+                className={"standard-year-" + (index + 1)}
               />
             </div>
           );

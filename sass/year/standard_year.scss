@@ -1,32 +1,25 @@
 @use "sass:color";
-@use "../mixins";
-@use "../variables";
-@use "../colors";
-@use "../constants";
+@use "../variables/mixins";
+@use "../variables/tokens";
+@use "../variables/colors";
+@use "../variables/constants";
 
 $step: 100/constants.$number-of-years;
 
 .standard-year {
-  //border: variables.$border-style;
-  font-size: variables.$text-regular;
-  border-radius: variables.$border-radius-medium;
-  margin: 1rem 0.25rem;
+  @include mixins.card();
+  padding: 0;
   overflow: hidden;
-  //color: colors.$secondary-start-dark;
+  margin-bottom: tokens.$padding-large;
 
   .header {
-    padding: variables.$padding-small;
+    padding: tokens.$padding-small;
     margin-bottom: 0.75rem;
-    //background-color: colors.$secondary-start;
     color: colors.$secondary;
   }
 
-  .passover-and-easter-overlap, .select-days {
-    //@include mixins.border-bottom-style(colors.$secondary-start);
-  }
+  .passover-and-easter-overlap {
 
-  .three-holidays {
-    //background-color: colors.$secondary-start-tint;
   }
 }
 

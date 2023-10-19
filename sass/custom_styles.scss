@@ -1,5 +1,5 @@
-@use "variables";
-@use "colors";
+@use "variables/tokens";
+@use "variables/colors";
 @use "year/year";
 @use "year/featured_year";
 @use "year/standard_year";
@@ -10,7 +10,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@700;900&display=swap");
 
 body {
-  font-family: variables.$serif-stack;
+  font-family: tokens.$serif-stack;
   padding: 2rem;
 }
 
@@ -32,7 +32,7 @@ hr {
 }
 
 .at-a-glance {
-  font-family: variables.$slab-stack;
+  font-family: tokens.$slab-stack;
   text-transform: uppercase;
   text-align: center;
   color: colors.$display;
