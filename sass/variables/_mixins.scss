@@ -26,11 +26,21 @@ $borer-style: solid 1px;
   }
 }
 
-@mixin card($color:#000) {
-  padding: framing.$padding-large;
-  border-radius: framing.$border-radius-large;
+@mixin card($color:#000, $size:large ) {
+  $padding: framing.$padding-large;
+  @if $size == small {
+    $padding: framing.$padding-medium;
+  }
+  $border-radius: framing.$border-radius-large;
+  padding: framing.$padding-null;
+  border-radius: $border-radius;
   overflow: hidden;
   @include border-style($color);
+  > div {
+    padding: $padding;
+  }
+
+
 }
 
 

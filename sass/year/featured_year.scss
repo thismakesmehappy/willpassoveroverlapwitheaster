@@ -34,12 +34,10 @@ $component-color-dark: colors.$main-dark;
 
   .select-days {
     @include mixins.book;
-    padding: framing.$padding-medium;
   }
 
   .three-holidays {
     background-color: $component-color-tint;
-    padding: framing.$padding-large;
   }
 
   .three-holidays {

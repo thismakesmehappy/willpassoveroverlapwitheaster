@@ -40,7 +40,7 @@
 }
 
 .featured-year {
-  padding: 1.5rem;
+  padding: 0;
   border-radius: 1.25rem;
   overflow: hidden;
   border: #01597F solid 1px;
@@ -48,6 +48,9 @@
   padding: 0 !important;
   margin: 0 auto 1rem auto !important;
   color: #00435B;
+}
+.featured-year > div {
+  padding: 1.5rem;
 }
 .featured-year .year {
   font-size: 3rem;
@@ -67,7 +70,6 @@
 .featured-year .select-days {
   font-size: 1.2rem;
   line-height: 1.35em;
-  padding: 1rem;
 }
 .featured-year .select-days p:first-of-type {
   margin-top: 0;
@@ -77,7 +79,6 @@
 }
 .featured-year .three-holidays {
   background-color: #DBF1FC;
-  padding: 1.5rem;
 }
 .featured-year .three-holidays {
   background-color: #DBF1FC;
@@ -109,20 +110,20 @@
 }
 
 .standard-year {
-  padding: 1.5rem;
-  border-radius: 1.25rem;
-  overflow: hidden;
-  border: #000 solid 1px;
-  padding: 0;
   margin-bottom: 1.5rem;
 }
 .standard-year .header {
-  padding: 0.5rem;
-  margin-bottom: 0.75rem;
   color: #fff;
 }
 .standard-year-1 {
+  padding: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: #0e6a4d solid 1px;
   color: #0a4630;
+}
+.standard-year-1 > div {
+  padding: 1rem;
 }
 .standard-year-1 .standard-year {
   border: #0e6a4d solid 1px;
@@ -138,7 +139,14 @@
 }
 
 .standard-year-2 {
+  padding: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: #1c654a solid 1px;
   color: #14432e;
+}
+.standard-year-2 > div {
+  padding: 1rem;
 }
 .standard-year-2 .standard-year {
   border: #1c654a solid 1px;
@@ -154,7 +162,14 @@
 }
 
 .standard-year-3 {
+  padding: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: #2a6146 solid 1px;
   color: #1d402c;
+}
+.standard-year-3 > div {
+  padding: 1rem;
 }
 .standard-year-3 .standard-year {
   border: #2a6146 solid 1px;
@@ -170,7 +185,14 @@
 }
 
 .standard-year-4 {
+  padding: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: #385c42 solid 1px;
   color: #273d29;
+}
+.standard-year-4 > div {
+  padding: 1rem;
 }
 .standard-year-4 .standard-year {
   border: #385c42 solid 1px;
@@ -186,7 +208,14 @@
 }
 
 .standard-year-5 {
+  padding: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: #46583e solid 1px;
   color: #303a27;
+}
+.standard-year-5 > div {
+  padding: 1rem;
 }
 .standard-year-5 .standard-year {
   border: #46583e solid 1px;
@@ -202,7 +231,14 @@
 }
 
 .standard-year-6 {
+  padding: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: #54533b solid 1px;
   color: #3a3725;
+}
+.standard-year-6 > div {
+  padding: 1rem;
 }
 .standard-year-6 .standard-year {
   border: #54533b solid 1px;
@@ -218,7 +254,14 @@
 }
 
 .standard-year-7 {
+  padding: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: #624f37 solid 1px;
   color: #433323;
+}
+.standard-year-7 > div {
+  padding: 1rem;
 }
 .standard-year-7 .standard-year {
   border: #624f37 solid 1px;
@@ -234,7 +277,14 @@
 }
 
 .standard-year-8 {
+  padding: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: #704a33 solid 1px;
   color: #4c3021;
+}
+.standard-year-8 > div {
+  padding: 1rem;
 }
 .standard-year-8 .standard-year {
   border: #704a33 solid 1px;
@@ -250,7 +300,14 @@
 }
 
 .standard-year-9 {
+  padding: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: #7e462f solid 1px;
   color: #562d1f;
+}
+.standard-year-9 > div {
+  padding: 1rem;
 }
 .standard-year-9 .standard-year {
   border: #7e462f solid 1px;
@@ -266,7 +323,14 @@
 }
 
 .standard-year-10 {
+  padding: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: #8c412c solid 1px;
   color: #5f2a1c;
+}
+.standard-year-10 > div {
+  padding: 1rem;
 }
 .standard-year-10 .standard-year {
   border: #8c412c solid 1px;
@@ -282,7 +346,14 @@
 }
 
 .standard-year-11 {
+  padding: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: #9a3d28 solid 1px;
   color: #69271a;
+}
+.standard-year-11 > div {
+  padding: 1rem;
 }
 .standard-year-11 .standard-year {
   border: #9a3d28 solid 1px;
@@ -298,7 +369,14 @@
 }
 
 .standard-year-12 {
+  padding: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: #a83824 solid 1px;
   color: #722418;
+}
+.standard-year-12 > div {
+  padding: 1rem;
 }
 .standard-year-12 .standard-year {
   border: #a83824 solid 1px;
@@ -314,7 +392,7 @@
 }
 
 #about {
-  padding: 1.5rem;
+  padding: 0;
   border-radius: 1.25rem;
   overflow: hidden;
   border: #743981 solid 1px;
@@ -322,6 +400,9 @@
   color: #361F47;
   font-size: 1.2rem;
   line-height: 1.35em;
+}
+#about > div {
+  padding: 1.5rem;
 }
 #about p:first-of-type {
   margin-top: 0;
@@ -336,26 +417,6 @@
   font-family: "Hepta Slab", sans-serif;
   text-transform: uppercase;
 }
-.expandable-content {
-  padding: 0.75em;
-}
-
-.expandable-content a {
-  color: inherit;
-}
-
-.expandable-content p {
-  line-height: 1.35em;
-}
-
-.expandable-content p:first-of-type {
-  margin-top: 0;
-}
-
-.expandable-content p:last-of-type {
-  margin-bottom: 0;
-}
-
 #what-is-this, #what-is-this.expandable-header, #what-is-this.expandable-content, #what-is-this div {
   font-size: 1.2rem;
   line-height: 1.35em;
@@ -391,12 +452,12 @@ hr {
   opacity: 100%;
 }
 
-.btn-link {
+.btn-link, a {
   font-size: inherit !important;
   color: inherit !important;
   padding: 0 0.125em !important;
   margin: inherit !important;
-  text-decoration: inherit !important;
+  text-decoration: underline !important;
 }
 
 .at-a-glance {

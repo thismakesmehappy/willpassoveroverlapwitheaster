@@ -7,18 +7,13 @@
 $step: 100/constants.$number-of-years;
 
 .standard-year {
-  @include mixins.card();
-  padding: 0;
   margin-bottom: framing.$padding-large;
 
   .header {
-    padding: framing.$padding-small;
-    margin-bottom: 0.75rem;
     color: colors.$secondary;
   }
 
   .passover-and-easter-overlap {
-
   }
 }
 
@@ -28,6 +23,7 @@ $step: 100/constants.$number-of-years;
   $mixed-color-dark: color.mix(colors.$secondary-start-dark, colors.$secondary-end-dark, $scale);
   $mixed-color-tint: color.mix(colors.$secondary-start-tint, colors.$secondary-end-tint, $scale);
   .standard-year-#{$i} {
+    @include mixins.card($mixed-color, small);
     color: $mixed-color-dark;
 
     .standard-year {
