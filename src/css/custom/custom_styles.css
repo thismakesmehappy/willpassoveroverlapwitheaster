@@ -42,11 +42,11 @@
 .featured-year {
   padding: 1.5rem;
   border-radius: 1.25rem;
+  overflow: hidden;
   border: #01597F solid 1px;
   font-size: 1.5rem;
   padding: 0 !important;
   margin: 0 auto 1rem auto !important;
-  overflow: hidden;
   color: #00435B;
 }
 .featured-year .year {
@@ -111,9 +111,9 @@
 .standard-year {
   padding: 1.5rem;
   border-radius: 1.25rem;
+  overflow: hidden;
   border: #000 solid 1px;
   padding: 0;
-  overflow: hidden;
   margin-bottom: 1.5rem;
 }
 .standard-year .header {
@@ -316,6 +316,7 @@
 #about {
   padding: 1.5rem;
   border-radius: 1.25rem;
+  overflow: hidden;
   border: #743981 solid 1px;
   padding: 0;
   color: #361F47;
@@ -331,17 +332,10 @@
 #about .expandable-header {
   background-color: #743981;
   color: #fff;
-  border-top-right-radius: 1.25rem;
-  border-top-left-radius: 1.25rem;
   padding: 0.75em;
   font-family: "Hepta Slab", sans-serif;
   text-transform: uppercase;
 }
-#about .expandable-header-collapsed {
-  border-bottom-right-radius: 1.25rem;
-  border-bottom-left-radius: 1.25rem;
-}
-
 .expandable-content {
   padding: 0.75em;
 }

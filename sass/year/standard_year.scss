@@ -9,7 +9,6 @@ $step: 100/constants.$number-of-years;
 .standard-year {
   @include mixins.card();
   padding: 0;
-  overflow: hidden;
   margin-bottom: framing.$padding-large;
 
   .header {

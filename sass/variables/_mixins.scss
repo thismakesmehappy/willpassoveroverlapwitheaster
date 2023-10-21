@@ -29,6 +29,7 @@ $borer-style: solid 1px;
 @mixin card($color:#000) {
   padding: framing.$padding-large;
   border-radius: framing.$border-radius-large;
+  overflow: hidden;
   @include border-style($color);
 }
 

@@ -1,11 +1,25 @@
 // border and spacing around/inside frame
 
-$padding-null: 0;
-$padding-micro: 0.125rem;
-$padding-tiny: 0.25rem;
-$padding-small: 0.5rem;
-$padding-medium: 1rem;
-$padding-large: 1.5rem;
+$spacing-null: 0;
+$spacing-micro: 0.125rem;
+$spacing-tiny: 0.25rem;
+$spacing-small: 0.5rem;
+$spacing-medium: 1rem;
+$spacing-large: 1.5rem;
+
+$padding-null: $spacing-null;
+$padding-micro: $spacing-micro;
+$padding-tiny: $spacing-tiny;
+$padding-small: $spacing-small;
+$padding-medium: $spacing-medium;
+$padding-large: $spacing-large;
+
+$margin-null: $spacing-null;
+$margin-micro: $spacing-micro;
+$margin-tiny: $spacing-tiny;
+$margin-small: $spacing-small;
+$margin-medium: $spacing-medium;
+$margin-large: $spacing-large;
 
 $border-radius-small: 0.5rem;
 $border-radius-medium: 1rem;

@@ -14,18 +14,14 @@ $component-color-dark: colors.$display-dark;
   @include mixins.book;
 
   .expandable-header {
-    background-color: colors.$display;
+    background-color: $component-color;
     color: colors.$secondary;
-    border-top-right-radius: framing.$border-radius-card;
-    border-top-left-radius: framing.$border-radius-card;
     padding: 0.75em;
     font-family: type.$slab-stack;
     text-transform: uppercase;
   }
 
   .expandable-header-collapsed {
-    border-bottom-right-radius: framing.$border-radius-card;
-    border-bottom-left-radius: framing.$border-radius-card;
   }
 
 }
