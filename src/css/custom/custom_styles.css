@@ -457,6 +457,13 @@ hr {
   color: inherit !important;
   padding: 0 0.125em !important;
   margin: inherit !important;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+a {
   text-decoration: underline !important;
 }
 
