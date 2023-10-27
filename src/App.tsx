@@ -8,7 +8,7 @@ import About from "./components/About.tsx";
 function App() {
   const [numberOfDays, setNumberOfDays] = useState(8);
   return (
-    <div className="container-responsive">
+    <div className="container-responsive p-2 p-md-4 p-lg-5">
       <FeaturedYear
         numberOfDays={numberOfDays}
         setNumberOfDays={setNumberOfDays}
