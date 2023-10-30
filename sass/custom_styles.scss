@@ -38,10 +38,17 @@ a {
   text-decoration: underline !important;
 }
 
-.at-a-glance {
+h1, h2, .at-a-glance {
   font-family: type.$slab-stack;
   text-transform: uppercase;
   text-align: center;
+}
+
+h1 {
+  color: colors.$main;
+}
+
+.at-a-glance, h2 {
   color: colors.$display;
 }
 

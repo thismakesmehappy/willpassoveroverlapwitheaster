@@ -466,10 +466,17 @@ a {
   text-decoration: underline !important;
 }
 
-.at-a-glance {
+h1, h2, .at-a-glance {
   font-family: "Hepta Slab", sans-serif;
   text-transform: uppercase;
   text-align: center;
+}
+
+h1 {
+  color: #01597F;
+}
+
+.at-a-glance, h2 {
   color: #743981;
 }
 
