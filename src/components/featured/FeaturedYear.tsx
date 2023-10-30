@@ -29,7 +29,7 @@ const FeaturedYear = ({ numberOfDays, setNumberOfDays }: Props) => {
     setYearOffset(0);
   };
   return (
-    <div className="p-5 row align-items-center text-center col col-12 col-md-10 col-lg-7 col-xl-6 m-auto featured-year">
+    <div className="p-5 row align-items-center text-center col col-12 col-lg-7 col-xl-6 m-auto featured-year">
       <FeaturedYearHeader
         passed={passed}
         year={holidays.year}
