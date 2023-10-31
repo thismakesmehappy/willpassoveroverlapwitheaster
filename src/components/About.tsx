@@ -18,7 +18,7 @@ function About() {
           compare schedules to determine whether we have to pre-celebrate Easter
           or if I can partake in real time. On years that the holidays overlap
           (most of them) we look ahead several years to figure out the next time
-          I can have a bread-full easter. I developed this app to make it easier
+          I can have a bread-full Easter. I developed this app to make it easier
           to look forward to all the delicious sharing.
         </p>
         <p>
