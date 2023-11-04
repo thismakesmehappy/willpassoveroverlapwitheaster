@@ -52,10 +52,23 @@ h1 {
   color: colors.$display;
 }
 
+$overlap-spacing: 0.25em;
 .tight {
-  letter-spacing: -.5em;
+  :first-child {
+    letter-spacing: -$overlap-spacing;
+  }
+
+  :last-child {
+    text-indent: -$overlap-spacing;
+  }
 }
 
 .open {
-  letter-spacing: .5em;
+  :first-child {
+    letter-spacing: $overlap-spacing;
+  }
+
+  :last-child {
+    text-indent: $overlap-spacing;
+  }
 }

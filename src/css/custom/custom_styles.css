@@ -480,12 +480,18 @@ h1 {
   color: #743981;
 }
 
-.tight {
-  letter-spacing: -0.5em;
+.tight :first-child {
+  letter-spacing: -0.25em;
+}
+.tight :last-child {
+  text-indent: -0.25em;
 }
 
-.open {
-  letter-spacing: 0.5em;
+.open :first-child {
+  letter-spacing: 0.25em;
+}
+.open :last-child {
+  text-indent: 0.25em;
 }
 
 /*# sourceMappingURL=custom_styles.css.map */
