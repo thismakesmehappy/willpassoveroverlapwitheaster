@@ -14,7 +14,11 @@ export function ExpandableHeader({ shiftButton, showAbout, title }: Props) {
       }
     >
       {title}{" "}
-      <button className="btn btn-link" onClick={() => shiftButton(!showAbout)}>
+      <button
+        className="btn btn-link"
+        onClick={() => shiftButton(!showAbout)}
+        aria-label={showAbout ? "-" : "+"}
+      >
         {showAbout ? (
           <i className="bi bi-dash-circle" />
         ) : (
