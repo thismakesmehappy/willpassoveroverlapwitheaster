@@ -4,9 +4,9 @@ test("Get Holidays With Overlap and Seven Days", () => {
   const inputYear = 2024;
   const expectedPassoverStart = new Date("April 22, 2024 03:24:00");
   const expectedPassoverEnd = new Date("April 29, 2024 03:24:00");
-  const expectedEaster = new Date("March 31, 2024 03:24:00");
+  const expectedEasterSunday = new Date("March 31, 2024 03:24:00");
   const expectedOverlap = false;
-  const { year, passoverStart, passoverEnd, easterDate, overlap } =
+  const { year, passoverStart, passoverEnd, easterSundayDate, overlap } =
     getHolidaysForYear(inputYear, 7);
   expect(year).toEqual(inputYear);
   expect(
@@ -15,7 +15,9 @@ test("Get Holidays With Overlap and Seven Days", () => {
   expect(
     compareDatesWithoutTime(passoverEnd, expectedPassoverEnd),
   ).toBeTruthy();
-  expect(compareDatesWithoutTime(easterDate, expectedEaster)).toBeTruthy();
+  expect(
+    compareDatesWithoutTime(easterSundayDate, expectedEasterSunday),
+  ).toBeTruthy();
   expect(overlap).toEqual(expectedOverlap);
 });
 

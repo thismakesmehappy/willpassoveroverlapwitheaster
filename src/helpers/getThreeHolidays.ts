@@ -1,11 +1,12 @@
-import { PassoverAndEaster } from "./getHolidaysForYear.ts";
+import { PassoverAndEasterSunday } from "./getHolidaysForYear.ts";
 import { icons } from "../data/enums.ts";
+import { holiday1, holiday2 } from "../data/constants.ts";
 
-const passoverStart = "Passover Start";
-const passoverEnd = "Passover End";
-const easter = "Easter";
+const passoverStart = holiday1 + " Start";
+const passoverEnd = holiday1 + " End";
+const easterSunday = holiday2;
 
-export const getThreeHolidays = (holidays: PassoverAndEaster) => {
+export const getThreeHolidays = (holidays: PassoverAndEasterSunday) => {
   const passoverStartHoliday = {
     date: holidays.passoverStart,
     holiday: passoverStart,
@@ -16,16 +17,16 @@ export const getThreeHolidays = (holidays: PassoverAndEaster) => {
     holiday: passoverEnd,
     icon: icons.end,
   };
-  const easterHoliday = {
-    date: holidays.easterDate,
-    holiday: easter,
+  const easterSundayHoliday = {
+    date: holidays.easterSundayDate,
+    holiday: easterSunday,
     icon: icons.whole,
   };
-  if (holidays.easterDate < holidays.passoverStart) {
-    return [easterHoliday, passoverStartHoliday, passoverEndHoliday];
-  } else if (holidays.easterDate > holidays.passoverEnd) {
-    return [passoverStartHoliday, passoverEndHoliday, easterHoliday];
+  if (holidays.easterSundayDate < holidays.passoverStart) {
+    return [easterSundayHoliday, passoverStartHoliday, passoverEndHoliday];
+  } else if (holidays.easterSundayDate > holidays.passoverEnd) {
+    return [passoverStartHoliday, passoverEndHoliday, easterSundayHoliday];
   } else {
-    return [passoverStartHoliday, easterHoliday, passoverEndHoliday];
+    return [passoverStartHoliday, easterSundayHoliday, passoverEndHoliday];
   }
 };

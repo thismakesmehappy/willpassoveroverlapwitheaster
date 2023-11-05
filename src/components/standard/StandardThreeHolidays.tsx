@@ -1,9 +1,9 @@
-import { PassoverAndEaster } from "../../helpers/getHolidaysForYear.ts";
+import { PassoverAndEasterSunday } from "../../helpers/getHolidaysForYear.ts";
 import { getThreeHolidays } from "../../helpers/getThreeHolidays.ts";
 import { OneHolidayHorizontal } from "../OneHolidayHorizontal.tsx";
 
 interface Props {
-  holidays: PassoverAndEaster;
+  holidays: PassoverAndEasterSunday;
 }
 
 const StandardThreeHolidays = ({ holidays }: Props) => {

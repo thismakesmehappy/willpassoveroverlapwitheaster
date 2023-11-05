@@ -22,6 +22,12 @@ function About() {
           to look forward to all the delicious sharing.
         </p>
         <p>
+          Why only Easter Sunday? While Easter extends a few days, the family
+          gathers on Easter Sunday, as most families do. There are different
+          wheaty treats throughout the week, but our main concern is being able
+          to celebrate with the family.
+        </p>
+        <p>
           Designed and developed by{" "}
           <a
             href="http://www.bernardo.onl"

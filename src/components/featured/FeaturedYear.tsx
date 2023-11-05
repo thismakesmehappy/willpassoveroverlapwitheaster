@@ -1,7 +1,7 @@
 import getHolidaysForYear from "../../helpers/getHolidaysForYear.ts";
 import FeaturedThreeHolidays from "./FeaturedThreeHolidays.tsx";
 import FeaturedYearHeader from "./FeaturedYearHeader.tsx";
-import PassoverAndEasterOverlap from "../PassoverAndEasterOverlap.tsx";
+import PassoverAndEasterSundayOverlap from "../PassoverAndEasterSundayOverlap.tsx";
 import getYearForNextHolidays from "../../helpers/getYearForNextHolidays.ts";
 import { useState } from "react";
 import { SevenOrEightDays } from "../SevenOrEightDays.tsx";
@@ -38,7 +38,7 @@ const FeaturedYear = ({ numberOfDays, setNumberOfDays }: Props) => {
         resetYear={resetYear}
       />
 
-      <PassoverAndEasterOverlap overlap={holidays.overlap} />
+      <PassoverAndEasterSundayOverlap overlap={holidays.overlap} />
       <SevenOrEightDays
         numberOfDays={numberOfDays}
         setNumberOfDays={setNumberOfDays}

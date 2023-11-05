@@ -1,3 +1,5 @@
+import { holiday1, holiday2 } from "../../data/constants.ts";
+
 interface Props {
   passed: boolean;
   year: number;
@@ -18,7 +20,7 @@ const FeaturedYearHeader = ({
       <p className="has-passed">
         {passed ? (
           <>
-            Passover and Easter already passed in {year - 1}
+            {holiday1} and {holiday2} already passed in {year - 1}
             <br />
             Showing you the holidays for next year
           </>

@@ -1,25 +1,28 @@
 import getPassoverForYear, { PassoverDates } from "./getPassoverForYear.ts";
-import getEasterForYear from "./getEasterForYear.ts";
-import getDoEasterAndPassoverOverlap from "./getDoEasterAndPassoverOverlap.ts";
+import getEasterSundayForYear from "./getEasterSundayForYear.ts";
+import getDoEasterSundayAndPassoverOverlap from "./getDoEasterSundayAndPassoverOverlap.ts";
 
-export interface PassoverAndEaster {
+export interface PassoverAndEasterSunday {
   year: number;
   passoverStart: Date;
   passoverEnd: Date;
-  easterDate: Date;
+  easterSundayDate: Date;
   overlap: boolean;
 }
 
 const getHolidaysForYear = (year: number, passoverDays: number = 8) => {
   const passover: PassoverDates = getPassoverForYear(year, passoverDays);
-  const easter: Date = getEasterForYear(year);
-  const overlap: boolean = getDoEasterAndPassoverOverlap(passover, easter);
+  const easterSunday: Date = getEasterSundayForYear(year);
+  const overlap: boolean = getDoEasterSundayAndPassoverOverlap(
+    passover,
+    easterSunday,
+  );
 
   return {
     year: year,
     passoverStart: passover.start,
     passoverEnd: passover.end,
-    easterDate: easter,
+    easterSundayDate: easterSunday,
     overlap: overlap,
   };
 };

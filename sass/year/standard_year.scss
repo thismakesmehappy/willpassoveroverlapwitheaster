@@ -13,7 +13,7 @@ $step: 100/constants.$number-of-years;
     color: colors.$secondary;
   }
 
-  .passover-and-easter-overlap {
+  .passover-and-easter-sunday-overlap {
   }
 }
 
@@ -34,7 +34,7 @@ $step: 100/constants.$number-of-years;
       background-color: $mixed-color;
     }
 
-    .passover-and-easter-overlap, .select-days {
+    .passover-and-easter-sunday-overlap, .select-days {
       @include mixins.border-bottom-style($mixed-color);
     }
 

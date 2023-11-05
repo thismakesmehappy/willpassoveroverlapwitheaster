@@ -1,36 +1,36 @@
-import getEasterForYear from "../../../src/helpers/getEasterForYear";
+import getEasterSundayForYear from "../../../src/helpers/getEasterSundayForYear";
 
-test("Get Easter for 2023", () => {
-  // Easter 2023 April 9
-  const easter = getEasterForYear(2023);
-  expect(easter.getFullYear()).toEqual(2023);
-  expect(easter.getDate()).toEqual(9);
-  expect(easter.getMonth()).toEqual(3);
-  expect(easter.getDay()).toEqual(0);
+test("Get Easter Sunday for 2023", () => {
+  // Easter Sunday 2023 April 9
+  const easterSunday = getEasterSundayForYear(2023);
+  expect(easterSunday.getFullYear()).toEqual(2023);
+  expect(easterSunday.getDate()).toEqual(9);
+  expect(easterSunday.getMonth()).toEqual(3);
+  expect(easterSunday.getDay()).toEqual(0);
 });
 
-test("Get Easter for 2020", () => {
-  // Easter 2023 April 12
-  const easter = getEasterForYear(2020);
-  expect(easter.getFullYear()).toEqual(2020);
-  expect(easter.getDate()).toEqual(12);
-  expect(easter.getMonth()).toEqual(3);
-  expect(easter.getDay()).toEqual(0);
+test("Get Easter Sunday for 2020", () => {
+  // Easter Sunday 2023 April 12
+  const easterSunday = getEasterSundayForYear(2020);
+  expect(easterSunday.getFullYear()).toEqual(2020);
+  expect(easterSunday.getDate()).toEqual(12);
+  expect(easterSunday.getMonth()).toEqual(3);
+  expect(easterSunday.getDay()).toEqual(0);
 });
 
-test("Get Easter for 2030", () => {
-  // Easter 2023 April 21
-  const easter = getEasterForYear(2030);
-  expect(easter.getFullYear()).toEqual(2030);
-  expect(easter.getDate()).toEqual(21);
-  expect(easter.getMonth()).toEqual(3);
-  expect(easter.getDay()).toEqual(0);
+test("Get Easter Sunday for 2030", () => {
+  // Easter Sunday 2023 April 21
+  const easterSunday = getEasterSundayForYear(2030);
+  expect(easterSunday.getFullYear()).toEqual(2030);
+  expect(easterSunday.getDate()).toEqual(21);
+  expect(easterSunday.getMonth()).toEqual(3);
+  expect(easterSunday.getDay()).toEqual(0);
 });
 
-test("Get Easter for Negative Date (error)", () => {
-  expect(() => getEasterForYear(-1000)).toThrow();
+test("Get Easter Sunday for Negative Date (error)", () => {
+  expect(() => getEasterSundayForYear(-1000)).toThrow();
 });
 
-test("Get Easter for Date below 1000 (error)", () => {
-  expect(() => getEasterForYear(100)).toThrow();
+test("Get Easter Sunday for Date below 1000 (error)", () => {
+  expect(() => getEasterSundayForYear(100)).toThrow();
 });

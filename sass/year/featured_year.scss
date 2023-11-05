@@ -28,7 +28,7 @@ $component-color-dark: colors.$main-dark;
     padding-bottom: framing.$padding-large;
   }
 
-  .passover-and-easter-overlap, .select-days {
+  .passover-and-easter-sunday-overlap, .select-days {
     @include mixins.border-bottom-style(colors.$main);
   }
 

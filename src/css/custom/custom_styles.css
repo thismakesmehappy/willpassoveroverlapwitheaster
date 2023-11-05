@@ -21,7 +21,7 @@
   margin-top: 0.25em;
 }
 
-.passover-and-easter-overlap {
+.passover-and-easter-sunday-overlap {
   font-size: 1.2em;
   text-transform: uppercase;
   line-height: 0.9em;
@@ -64,7 +64,7 @@
   color: #fff !important;
   padding-bottom: 1.5rem;
 }
-.featured-year .passover-and-easter-overlap, .featured-year .select-days {
+.featured-year .passover-and-easter-sunday-overlap, .featured-year .select-days {
   border-bottom: #01597F solid 1px;
 }
 .featured-year .select-days {
@@ -131,7 +131,7 @@
 .standard-year-1 .header {
   background-color: #0e6a4d;
 }
-.standard-year-1 .passover-and-easter-overlap, .standard-year-1 .select-days {
+.standard-year-1 .passover-and-easter-sunday-overlap, .standard-year-1 .select-days {
   border-bottom: #0e6a4d solid 1px;
 }
 .standard-year-1 .three-holidays {
@@ -154,7 +154,7 @@
 .standard-year-2 .header {
   background-color: #1c654a;
 }
-.standard-year-2 .passover-and-easter-overlap, .standard-year-2 .select-days {
+.standard-year-2 .passover-and-easter-sunday-overlap, .standard-year-2 .select-days {
   border-bottom: #1c654a solid 1px;
 }
 .standard-year-2 .three-holidays {
@@ -177,7 +177,7 @@
 .standard-year-3 .header {
   background-color: #2a6146;
 }
-.standard-year-3 .passover-and-easter-overlap, .standard-year-3 .select-days {
+.standard-year-3 .passover-and-easter-sunday-overlap, .standard-year-3 .select-days {
   border-bottom: #2a6146 solid 1px;
 }
 .standard-year-3 .three-holidays {
@@ -200,7 +200,7 @@
 .standard-year-4 .header {
   background-color: #385c42;
 }
-.standard-year-4 .passover-and-easter-overlap, .standard-year-4 .select-days {
+.standard-year-4 .passover-and-easter-sunday-overlap, .standard-year-4 .select-days {
   border-bottom: #385c42 solid 1px;
 }
 .standard-year-4 .three-holidays {
@@ -223,7 +223,7 @@
 .standard-year-5 .header {
   background-color: #46583e;
 }
-.standard-year-5 .passover-and-easter-overlap, .standard-year-5 .select-days {
+.standard-year-5 .passover-and-easter-sunday-overlap, .standard-year-5 .select-days {
   border-bottom: #46583e solid 1px;
 }
 .standard-year-5 .three-holidays {
@@ -246,7 +246,7 @@
 .standard-year-6 .header {
   background-color: #54533b;
 }
-.standard-year-6 .passover-and-easter-overlap, .standard-year-6 .select-days {
+.standard-year-6 .passover-and-easter-sunday-overlap, .standard-year-6 .select-days {
   border-bottom: #54533b solid 1px;
 }
 .standard-year-6 .three-holidays {
@@ -269,7 +269,7 @@
 .standard-year-7 .header {
   background-color: #624f37;
 }
-.standard-year-7 .passover-and-easter-overlap, .standard-year-7 .select-days {
+.standard-year-7 .passover-and-easter-sunday-overlap, .standard-year-7 .select-days {
   border-bottom: #624f37 solid 1px;
 }
 .standard-year-7 .three-holidays {
@@ -292,7 +292,7 @@
 .standard-year-8 .header {
   background-color: #704a33;
 }
-.standard-year-8 .passover-and-easter-overlap, .standard-year-8 .select-days {
+.standard-year-8 .passover-and-easter-sunday-overlap, .standard-year-8 .select-days {
   border-bottom: #704a33 solid 1px;
 }
 .standard-year-8 .three-holidays {
@@ -315,7 +315,7 @@
 .standard-year-9 .header {
   background-color: #7e462f;
 }
-.standard-year-9 .passover-and-easter-overlap, .standard-year-9 .select-days {
+.standard-year-9 .passover-and-easter-sunday-overlap, .standard-year-9 .select-days {
   border-bottom: #7e462f solid 1px;
 }
 .standard-year-9 .three-holidays {
@@ -338,7 +338,7 @@
 .standard-year-10 .header {
   background-color: #8c412c;
 }
-.standard-year-10 .passover-and-easter-overlap, .standard-year-10 .select-days {
+.standard-year-10 .passover-and-easter-sunday-overlap, .standard-year-10 .select-days {
   border-bottom: #8c412c solid 1px;
 }
 .standard-year-10 .three-holidays {
@@ -361,7 +361,7 @@
 .standard-year-11 .header {
   background-color: #9a3d28;
 }
-.standard-year-11 .passover-and-easter-overlap, .standard-year-11 .select-days {
+.standard-year-11 .passover-and-easter-sunday-overlap, .standard-year-11 .select-days {
   border-bottom: #9a3d28 solid 1px;
 }
 .standard-year-11 .three-holidays {
@@ -384,7 +384,7 @@
 .standard-year-12 .header {
   background-color: #a83824;
 }
-.standard-year-12 .passover-and-easter-overlap, .standard-year-12 .select-days {
+.standard-year-12 .passover-and-easter-sunday-overlap, .standard-year-12 .select-days {
   border-bottom: #a83824 solid 1px;
 }
 .standard-year-12 .three-holidays {

@@ -2,22 +2,22 @@
 import Holidays from "date-holidays";
 
 const hd = new Holidays("US");
-const easterDescription: string = "Easter Sunday";
+const easterSundayDescription: string = "Easter Sunday";
 
-const getEasterForYear = (year: number) => {
+const getEasterSundayForYear = (year: number) => {
   if (year <= 1000) {
     throw new Error("Year must be greater than 1000");
   }
   const holidaysForYear = hd.getHolidays(year);
-  let easterDate: Date = new Date();
+  let easterSundayDate: Date = new Date();
 
   holidaysForYear.forEach((holiday) => {
-    if (holiday.name == easterDescription) {
-      easterDate = new Date(holiday.date);
+    if (holiday.name == easterSundayDescription) {
+      easterSundayDate = new Date(holiday.date);
     }
   });
 
-  return easterDate;
+  return easterSundayDate;
 };
 
-export default getEasterForYear;
+export default getEasterSundayForYear;
