@@ -15,7 +15,7 @@ const StandardList = ({ numberOfDays }: Props) => {
         {listOfHolidays.map((holiday, index) => {
           return (
             <div
-              className="col col-12 col-md-6 col-lg-4 col-xl-3"
+              className="col col-12 col-md-6 col-lg-4"
               key={"holiday" + holiday.year}
             >
               <StandardYear
