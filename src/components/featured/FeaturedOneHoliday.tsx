@@ -16,7 +16,7 @@ const FeaturedOneHoliday = ({ holiday }: Props) => {
       />
       <OneHolidayHorizontal
         holiday={holiday}
-        short={false}
+        short={true}
         className="d-block d-md-none"
       />
     </>
