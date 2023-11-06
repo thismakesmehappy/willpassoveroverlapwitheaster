@@ -1,7 +1,6 @@
-import { holiday1, holiday2 } from "../../data/constants.ts";
+import { ReactNode } from "react";
 
 interface Props {
-  passed: boolean;
   year: number;
   decreaseYear: () => void;
   increaseYear: () => void;
@@ -9,50 +8,40 @@ interface Props {
 }
 
 const FeaturedYearHeader = ({
-  passed,
   year,
   decreaseYear,
   increaseYear,
   resetYear,
 }: Props) => {
+  const conditionalPipe: ReactNode = (
+    <>
+      <span className="d-none d-sm-inline">|</span>
+      <div className="d-block d-sm-none my-2"></div>
+    </>
+  );
   return (
     <div className="col col-12 header">
-      <p className="has-passed">
-        {passed ? (
-          <>
-            {holiday1} and {holiday2} already passed in {year - 1}
-            <br />
-            Showing you the holidays for next year
-          </>
-        ) : (
-          <>
-            &nbsp;
-            <br />
-            &nbsp;
-          </>
-        )}
-      </p>
       <div className="year">{year}</div>
       <div className="change-years">
         <button
           onClick={decreaseYear}
           className={"btn btn-link change-year last-year"}
         >
-          {"<<"} Previous Year
+          {"<<"} Previous
         </button>
-        |
+        {conditionalPipe}
         <button
           onClick={resetYear}
           className={"btn btn-link change-year next-year"}
         >
-          This Year
+          Upcoming Holidays
         </button>
-        |
+        {conditionalPipe}
         <button
           onClick={increaseYear}
           className={"btn btn-link change-year next-year"}
         >
-          Following Year {">>"}
+          Following {">>"}
         </button>
       </div>
     </div>

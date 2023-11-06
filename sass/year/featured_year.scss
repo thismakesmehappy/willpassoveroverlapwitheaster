@@ -45,19 +45,15 @@ $component-color-dark: colors.$main-dark;
   }
 }
 
-/* Label above featured year to determine if the holidays hav already passed */
+/* Label above featured year to determine if the holidays have already passed */
 
 .has-passed, .change-years {
   font-size: .9em;
   margin: 0;
   line-height: 1em;
-  padding: 0 0 0.2rem;
+  //padding: 0 0 0.2rem;
   font-weight: 200;
-}
-
-.change-years {
-  margin-top: .5em;
-  margin-bottom: .5em;
+  padding-top: framing.$spacing-small;
 }
 
 /* Buttons below featured year switch year to display */

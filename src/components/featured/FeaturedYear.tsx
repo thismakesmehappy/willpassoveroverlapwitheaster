@@ -12,12 +12,9 @@ interface Props {
 }
 
 const FeaturedYear = ({ numberOfDays, setNumberOfDays }: Props) => {
-  const today: Date = new Date();
   const year = getYearForNextHolidays(numberOfDays);
   const [yearOffset, setYearOffset] = useState(0);
   const holidays = getHolidaysForYear(year + yearOffset, numberOfDays);
-  const isNext = yearOffset == 0;
-  const passed: boolean = isNext && today.getFullYear() < holidays.year;
 
   const increaseYear = () => {
     setYearOffset(yearOffset + 1);
@@ -31,7 +28,6 @@ const FeaturedYear = ({ numberOfDays, setNumberOfDays }: Props) => {
   return (
     <div className="p-5 row align-items-center text-center col col-12 col-lg-7 col-xl-6 m-auto featured-year">
       <FeaturedYearHeader
-        passed={passed}
         year={holidays.year}
         decreaseYear={decreaseYear}
         increaseYear={increaseYear}
