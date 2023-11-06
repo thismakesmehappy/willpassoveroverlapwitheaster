@@ -9,7 +9,9 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest",
-    "deploy": "npm run build && yes | scp -r dist/* ber@bernardo.onl:~/passoverandeaster.com/public"
+    "deploy": "npm run build && yes | scp -r dist/* ber@bernardo.onl:~/passoverandeaster.com/public",
+    "viz": "npx vite-bundle-visualizer",
+    "bundleviz": " npx vite-bundle-visualizer"
   },
   "dependencies": {
     "@hebcal/core": "^4.3.4",
