@@ -34,6 +34,7 @@ const getPassoverForYear = (year: number, passoverDays: number) => {
     }
   });
 
+  // TODO: Verify dates are valid before returning
   return {
     start: passoverStart,
     end: passoverEnd,

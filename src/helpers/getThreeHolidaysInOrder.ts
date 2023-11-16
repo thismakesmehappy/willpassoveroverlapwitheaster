@@ -2,11 +2,11 @@ import { PassoverAndEasterSunday } from "./getHolidaysForYear.ts";
 import { icons } from "../data/enums.ts";
 import { holiday1, holiday2 } from "../data/constants.ts";
 
-const passoverStart = holiday1 + " Start";
-const passoverEnd = holiday1 + " End";
-const easterSunday = holiday2;
+export const passoverStart = holiday1 + " Start";
+export const passoverEnd = holiday1 + " End";
+export const easterSunday = holiday2;
 
-export const getThreeHolidays = (holidays: PassoverAndEasterSunday) => {
+export const getThreeHolidaysInOrder = (holidays: PassoverAndEasterSunday) => {
   const passoverStartHoliday = {
     date: holidays.passoverStart,
     holiday: passoverStart,

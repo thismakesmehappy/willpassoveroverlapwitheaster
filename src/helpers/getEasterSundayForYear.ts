@@ -17,6 +17,7 @@ const getEasterSundayForYear = (year: number) => {
     }
   });
 
+  // TODO: Verify date is valid before returning
   return easterSundayDate;
 };
 

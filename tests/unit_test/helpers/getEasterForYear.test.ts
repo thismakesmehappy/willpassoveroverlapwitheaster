@@ -6,7 +6,7 @@ test.each([
   { year: 2020, date: "April 12" },
   { year: 2030, date: "April 21" },
 ])("Get Easter Sunday for $year", ({ year, date }) => {
-  // Given
+  // Given --> setup in parameterized args
   const expected = new Date(`${date}, ${year}`);
 
   // When
@@ -30,6 +30,10 @@ test.each([
 ])(
   "Get Easter Sunday for $year, $message (error)",
   ({ year, errorMessage }) => {
+    // Given  --> setup in parameterized args
+
+    // When
+    // Then
     expect(() => getEasterSundayForYear(year)).toThrow(errorMessage);
   },
 );

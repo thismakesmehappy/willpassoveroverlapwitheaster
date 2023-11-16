@@ -29,7 +29,7 @@ test.each([
 ])(
   "Get Passover for $year with $numberOfDays Days",
   ({ year, numberOfDays, start, end }) => {
-    // Given
+    // Given --> setup in parameterized args
 
     // When
     const obtained = getPassoverForYear(year, numberOfDays);

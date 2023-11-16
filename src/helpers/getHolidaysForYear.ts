@@ -3,11 +3,11 @@ import getEasterSundayForYear from "./getEasterSundayForYear.ts";
 import getDoEasterSundayAndPassoverOverlap from "./getDoEasterSundayAndPassoverOverlap.ts";
 
 export interface PassoverAndEasterSunday {
-  year: number;
+  year?: number;
   passoverStart: Date;
   passoverEnd: Date;
   easterSundayDate: Date;
-  overlap: boolean;
+  overlap?: boolean;
 }
 
 const getHolidaysForYear = (year: number, passoverDays: number = 8) => {

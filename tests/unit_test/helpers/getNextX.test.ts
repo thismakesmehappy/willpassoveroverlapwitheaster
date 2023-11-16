@@ -12,7 +12,8 @@ test.each([
 ])(
   "Test $numberOfYears years with $numberOfDays days",
   ({ numberOfYears, numberOfDays }) => {
-    // Given
+    // Given  --> setup in parameterized args
+
     const oneDayInMilliseconds = 24 * 60 * 60 * 1000;
     const numberOfDaysInMilliseconds = numberOfDays * oneDayInMilliseconds;
 

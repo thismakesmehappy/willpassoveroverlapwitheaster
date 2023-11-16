@@ -1,13 +1,13 @@
 import { PassoverAndEasterSunday } from "../../helpers/getHolidaysForYear.ts";
 import FeaturedOneHoliday from "./FeaturedOneHoliday.tsx";
-import { getThreeHolidays } from "../../helpers/getThreeHolidays.ts";
+import { getThreeHolidaysInOrder } from "../../helpers/getThreeHolidaysInOrder.ts";
 
 interface Props {
   holidays: PassoverAndEasterSunday;
 }
 
 const FeaturedThreeHolidays = ({ holidays }: Props) => {
-  const threeHolidays = getThreeHolidays(holidays);
+  const threeHolidays = getThreeHolidaysInOrder(holidays);
   return (
     <div className="row three-holidays m-0">
       {threeHolidays.map((holidays) => (
