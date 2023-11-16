@@ -24,7 +24,7 @@ const getHolidaysForYear = (year: number, passoverDays: number = 8) => {
     passoverEnd: passover.end,
     easterSundayDate: easterSunday,
     overlap: overlap,
-  };
+  } as PassoverAndEasterSunday;
 };
 
 export default getHolidaysForYear;
