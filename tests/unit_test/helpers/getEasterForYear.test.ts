@@ -2,10 +2,10 @@ import getEasterSundayForYear from "../../../src/helpers/getEasterSundayForYear"
 import { compareDates } from "./testHelpers";
 
 test.each([
-  [2023, "April 1"],
-  [2020, "April 12"],
-  [2030, "April 21"],
-])("Get Easter Sunday for %p", (year: number, date: string) => {
+  { year: 2023, date: "April 1" },
+  { year: 2020, date: "April 12" },
+  { year: 2030, date: "April 21" },
+])("Get Easter Sunday for $year", ({ year, date }) => {
   // Given
   const expected = new Date(`${date}, ${year}`);
 
@@ -17,15 +17,19 @@ test.each([
 });
 
 test.each([
-  [-1000, "Year must be greater than 1000"],
-  [100, "Year must be greater than 1000"],
+  {
+    year: -1000,
+    errorMessage: "Year must be greater than 1000",
+    message: "negative year",
+  },
+  {
+    year: 100,
+    errorMessage: "Year must be greater than 1000",
+    message: "positive year, under 1000",
+  },
 ])(
-  "Get Easter Sunday for %p, %p (error)",
-  (year: number, errorType: string) => {
-    expect(() => getEasterSundayForYear(year)).toThrow(errorType);
+  "Get Easter Sunday for $year, $message (error)",
+  ({ year, errorMessage }) => {
+    expect(() => getEasterSundayForYear(year)).toThrow(errorMessage);
   },
 );
-
-test("Get Easter Sunday for Date below 1000 (error)", () => {
-  expect(() => getEasterSundayForYear(100)).toThrow();
-});
