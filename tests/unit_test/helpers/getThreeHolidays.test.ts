@@ -16,6 +16,8 @@ test.each([
     easterSundayDate: new Date("March 31, 2024"),
     expectedOrder: [easterSunday, passoverStart, passoverEnd],
     message: "Easter falls before Passover",
+    overlap: false,
+    year: 2024,
   },
   {
     passoverStartDate: new Date("April 10, 2024"),
@@ -23,6 +25,8 @@ test.each([
     easterSundayDate: new Date("April 10, 2024"),
     expectedOrder: [passoverStart, easterSunday, passoverEnd],
     message: "Easter falls on the first day of Passover",
+    overlap: true,
+    year: 2024,
   },
   {
     passoverStartDate: new Date("April 10, 2024"),
@@ -30,6 +34,8 @@ test.each([
     easterSundayDate: new Date("April 15, 2024"),
     expectedOrder: [passoverStart, easterSunday, passoverEnd],
     message: "Easter falls in the middle of Passover",
+    overlap: true,
+    year: 2024,
   },
   {
     passoverStartDate: new Date("April 10, 2024"),
@@ -37,6 +43,8 @@ test.each([
     easterSundayDate: new Date("April 20, 2024"),
     expectedOrder: [passoverStart, easterSunday, passoverEnd],
     message: "Easter falls on the last day of Passover",
+    overlap: true,
+    year: 2024,
   },
   {
     passoverStartDate: new Date("April 22, 2024"),
@@ -44,10 +52,19 @@ test.each([
     easterSundayDate: new Date("May 1, 2024"),
     expectedOrder: [passoverStart, passoverEnd, easterSunday],
     message: "Easter falls after Passover",
+    overlap: false,
+    year: 2024,
   },
 ])(
   "Get Three Holidays in Order: $expectedOrder; $message",
-  ({ passoverStartDate, passoverEndDate, easterSundayDate, expectedOrder }) => {
+  ({
+    passoverStartDate,
+    passoverEndDate,
+    easterSundayDate,
+    expectedOrder,
+    overlap,
+    year,
+  }) => {
     // Given  --> setup in parameterized args
 
     // Creating dictionaries so we only have to pass one array to test the
@@ -69,6 +86,8 @@ test.each([
       passoverStart: passoverStartDate,
       passoverEnd: passoverEndDate,
       easterSundayDate: easterSundayDate,
+      overlap: overlap,
+      year: year,
     });
 
     // Then
