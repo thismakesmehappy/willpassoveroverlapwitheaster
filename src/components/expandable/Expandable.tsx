@@ -1,7 +1,7 @@
 import { ReactNode, useState } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import ExpandableHeader from "./ExpandableHeader.tsx";
-import { ExpandableContent } from "./ExpandableContent.tsx";
+import ExpandableHeader from "components/expandable/ExpandableHeader.tsx";
+import { ExpandableContent } from "components/expandable/ExpandableContent.tsx";
 
 interface Props {
   title: string;

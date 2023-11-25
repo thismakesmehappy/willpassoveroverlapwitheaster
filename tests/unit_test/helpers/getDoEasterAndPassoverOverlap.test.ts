@@ -1,5 +1,5 @@
-import getDoEasterSundayAndPassoverOverlap from "../../../src/helpers/getDoEasterSundayAndPassoverOverlap";
-import { PassoverDates } from "../../../src/helpers/getPassoverForYear";
+import getDoEasterSundayAndPassoverOverlap from "helpers/getDoEasterSundayAndPassoverOverlap";
+import { PassoverDates } from "helpers/getPassoverForYear";
 
 // these are not real holiday dates, we just care that the relationship of the holidays matches
 test.each([

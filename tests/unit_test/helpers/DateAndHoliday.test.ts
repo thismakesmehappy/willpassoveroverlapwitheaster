@@ -1,6 +1,6 @@
-import { DateAndHoliday } from "../../../src/helpers/DateAndHoliday";
-import { icons } from "../../../src/data/enums.ts";
-import { holiday1 } from "../../../src/data/constants";
+import { DateAndHoliday } from "helpers/DateAndHoliday";
+import { icons } from "data/enums.ts";
+import { holiday1 } from "data/constants";
 
 test("Test Interface for DateAndHoliday with icon", () => {
   // Given

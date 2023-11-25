@@ -1,6 +1,6 @@
-import PassoverAndEasterSundayOverlap from "../PassoverAndEasterSundayOverlap.tsx";
-import StandardThreeHolidays from "./StandardThreeHolidays.tsx";
-import { PassoverAndEasterSunday } from "../../helpers/getHolidaysForYear.ts";
+import PassoverAndEasterSundayOverlap from "components/PassoverAndEasterSundayOverlap.tsx";
+import StandardThreeHolidays from "components/standard/StandardThreeHolidays.tsx";
+import { PassoverAndEasterSunday } from "helpers/getHolidaysForYear.ts";
 
 interface Props {
   holiday: PassoverAndEasterSunday;

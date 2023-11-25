@@ -1,4 +1,4 @@
-import Expandable from "./expandable/Expandable.tsx";
+import Expandable from "components/expandable/Expandable.tsx";
 
 function About() {
   return (

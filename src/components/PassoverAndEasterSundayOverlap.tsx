@@ -1,5 +1,5 @@
-import Overlap from "./Overlap.tsx";
-import { holiday1, holiday2 } from "../data/constants.ts";
+import Overlap from "components/Overlap.tsx";
+import { holiday1, holiday2 } from "data/constants.ts";
 
 interface Props {
   overlap: boolean;

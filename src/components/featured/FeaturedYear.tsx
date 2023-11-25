@@ -1,10 +1,10 @@
-import getHolidaysForYear from "../../helpers/getHolidaysForYear.ts";
-import FeaturedThreeHolidays from "./FeaturedThreeHolidays.tsx";
-import FeaturedYearHeader from "./FeaturedYearHeader.tsx";
-import PassoverAndEasterSundayOverlap from "../PassoverAndEasterSundayOverlap.tsx";
-import getYearForNextHolidays from "../../helpers/getYearForNextHolidays.ts";
+import getHolidaysForYear from "helpers/getHolidaysForYear.ts";
+import FeaturedThreeHolidays from "components/featured/FeaturedThreeHolidays.tsx";
+import FeaturedYearHeader from "components/featured/FeaturedYearHeader.tsx";
+import PassoverAndEasterSundayOverlap from "components/PassoverAndEasterSundayOverlap.tsx";
+import getYearForNextHolidays from "helpers/getYearForNextHolidays.ts";
 import { useState } from "react";
-import { SevenOrEightDays } from "../SevenOrEightDays.tsx";
+import { SevenOrEightDays } from "components/SevenOrEightDays.tsx";
 
 interface Props {
   numberOfDays: number;

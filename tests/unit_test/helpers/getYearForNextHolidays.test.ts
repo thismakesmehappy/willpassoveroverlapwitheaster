@@ -1,5 +1,4 @@
-import getYearForNextHolidays from "../../../src/helpers/getYearForNextHolidays";
-// import {Date} from
+import getYearForNextHolidays from "helpers/getYearForNextHolidays";
 
 test.each([
   {

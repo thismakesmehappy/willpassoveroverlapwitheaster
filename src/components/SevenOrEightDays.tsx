@@ -1,6 +1,6 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
-import Props from "./featured/FeaturedYear.tsx";
-import Expandable from "./expandable/Expandable.tsx";
+import Props from "components/featured/FeaturedYear.tsx";
+import Expandable from "components/expandable/Expandable.tsx";
 
 interface Props {
   numberOfDays: number;

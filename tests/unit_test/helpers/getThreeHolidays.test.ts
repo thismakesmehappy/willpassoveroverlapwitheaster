@@ -3,9 +3,9 @@ import {
   passoverEnd,
   passoverStart,
   getThreeHolidaysInOrder,
-} from "../../../src/helpers/getThreeHolidaysInOrder";
+} from "helpers/getThreeHolidaysInOrder";
 
-import { icons as iconsList } from "../../../src/data/enums";
+import { icons as iconsList } from "data/enums";
 import { compareDates } from "./testHelpers";
 
 // these are not real holiday dates, we just care that the relationship of the holidays matches

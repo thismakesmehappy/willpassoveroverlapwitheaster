@@ -1,6 +1,8 @@
-import getPassoverForYear, { PassoverDates } from "./getPassoverForYear.ts";
-import getEasterSundayForYear from "./getEasterSundayForYear.ts";
-import getDoEasterSundayAndPassoverOverlap from "./getDoEasterSundayAndPassoverOverlap.ts";
+import getPassoverForYear, {
+  PassoverDates,
+} from "helpers/getPassoverForYear.ts";
+import getEasterSundayForYear from "helpers/getEasterSundayForYear.ts";
+import getDoEasterSundayAndPassoverOverlap from "helpers/getDoEasterSundayAndPassoverOverlap.ts";
 
 export interface PassoverAndEasterSunday {
   year: number;

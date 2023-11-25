@@ -1,6 +1,6 @@
-import StandardYear from "./StandardYear.tsx";
-import { numberOfYears } from "../../data/constants.ts";
-import getNextX from "../../helpers/getNextX.ts";
+import StandardYear from "components/standard/StandardYear.tsx";
+import { numberOfYears } from "data/constants.ts";
+import getNextX from "helpers/getNextX.ts";
 
 interface Props {
   numberOfDays: number;
