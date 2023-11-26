@@ -1,6 +1,6 @@
-import Expandable from "components/expandable/Expandable.tsx";
+import { Expandable } from "components";
 
-function About() {
+export function About() {
   return (
     <Expandable
       title="About"
@@ -73,5 +73,3 @@ function About() {
     </Expandable>
   );
 }
-
-export default About;

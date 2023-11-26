@@ -1,12 +1,12 @@
-import OneHolidayVertical from "components/commonYears/OneHolidayVertical.tsx";
-import { OneHolidayHorizontal } from "components/commonYears/OneHolidayHorizontal.tsx";
+import { OneHolidayVertical } from "components";
+import { OneHolidayHorizontal } from "components";
 import { DateAndHoliday } from "helpers";
 
 interface Props {
   holiday: DateAndHoliday;
 }
 
-const FeaturedOneHoliday = ({ holiday }: Props) => {
+export const FeaturedOneHoliday = ({ holiday }: Props) => {
   return (
     <>
       <OneHolidayVertical
@@ -22,5 +22,3 @@ const FeaturedOneHoliday = ({ holiday }: Props) => {
     </>
   );
 };
-
-export default FeaturedOneHoliday;

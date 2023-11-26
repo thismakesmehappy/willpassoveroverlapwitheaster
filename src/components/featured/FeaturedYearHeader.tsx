@@ -7,7 +7,7 @@ interface Props {
   resetYear: () => void;
 }
 
-const FeaturedYearHeader = ({
+export const FeaturedYearHeader = ({
   year,
   decreaseYear,
   increaseYear,
@@ -47,5 +47,3 @@ const FeaturedYearHeader = ({
     </div>
   );
 };
-
-export default FeaturedYearHeader;

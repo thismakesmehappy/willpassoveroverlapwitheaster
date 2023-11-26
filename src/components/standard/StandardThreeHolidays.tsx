@@ -1,12 +1,12 @@
 import { PassoverAndEasterSunday } from "helpers";
 import { getThreeHolidaysInOrder } from "helpers";
-import { OneHolidayHorizontal } from "components/commonYears/OneHolidayHorizontal.tsx";
+import { OneHolidayHorizontal } from "components";
 
 interface Props {
   holidays: PassoverAndEasterSunday;
 }
 
-const StandardThreeHolidays = ({ holidays }: Props) => {
+export const StandardThreeHolidays = ({ holidays }: Props) => {
   const threeHolidays = getThreeHolidaysInOrder(holidays);
   return (
     <div className="three-holidays">
@@ -20,5 +20,3 @@ const StandardThreeHolidays = ({ holidays }: Props) => {
     </div>
   );
 };
-
-export default StandardThreeHolidays;

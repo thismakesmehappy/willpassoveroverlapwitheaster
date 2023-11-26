@@ -1,11 +1,11 @@
-import Overlap from "components/commonYears/Overlap.tsx";
+import { Overlap } from "components";
 import { holiday1, holiday2 } from "data/constants.ts";
 
 interface Props {
   overlap: boolean;
 }
 
-const PassoverAndEasterSundayOverlap = ({ overlap }: Props) => {
+export const PassoverAndEasterSundayOverlap = ({ overlap }: Props) => {
   return (
     <div className="passover-and-easter-sunday-overlap">
       {holiday1} and {holiday2} {!overlap && "do not"} overlap
@@ -13,5 +13,3 @@ const PassoverAndEasterSundayOverlap = ({ overlap }: Props) => {
     </div>
   );
 };
-
-export default PassoverAndEasterSundayOverlap;

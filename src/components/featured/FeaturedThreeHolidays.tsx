@@ -1,12 +1,12 @@
 import { PassoverAndEasterSunday } from "helpers";
-import FeaturedOneHoliday from "components/featured/FeaturedOneHoliday.tsx";
+import { FeaturedOneHoliday } from "components";
 import { getThreeHolidaysInOrder } from "helpers";
 
 interface Props {
   holidays: PassoverAndEasterSunday;
 }
 
-const FeaturedThreeHolidays = ({ holidays }: Props) => {
+export const FeaturedThreeHolidays = ({ holidays }: Props) => {
   const threeHolidays = getThreeHolidaysInOrder(holidays);
   return (
     <div className="row three-holidays m-0">
@@ -19,5 +19,3 @@ const FeaturedThreeHolidays = ({ holidays }: Props) => {
     </div>
   );
 };
-
-export default FeaturedThreeHolidays;

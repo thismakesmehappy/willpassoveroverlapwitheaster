@@ -24,5 +24,3 @@ export const OneHolidayVertical = ({ holiday, short, className }: Props) => {
     </div>
   );
 };
-
-export default OneHolidayVertical;

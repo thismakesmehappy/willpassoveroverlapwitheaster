@@ -5,7 +5,7 @@ interface Props {
   overlap: boolean;
 }
 
-const Overlap = ({ overlap }: Props) => {
+export const Overlap = ({ overlap }: Props) => {
   return (
     <div className={overlap ? "overlap tight" : "overlap open"}>
       <i className="bi bi-circle" />
@@ -13,5 +13,3 @@ const Overlap = ({ overlap }: Props) => {
     </div>
   );
 };
-
-export default Overlap;

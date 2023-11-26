@@ -1,7 +1,7 @@
 import { ReactNode, useState } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import ExpandableHeader from "components/expandable/ExpandableHeader.tsx";
-import { ExpandableContent } from "components/expandable/ExpandableContent.tsx";
+import { ExpandableHeader } from "components";
+import { ExpandableContent } from "components";
 
 interface Props {
   title: string;
@@ -35,5 +35,3 @@ export function Expandable({
     </div>
   );
 }
-
-export default Expandable;

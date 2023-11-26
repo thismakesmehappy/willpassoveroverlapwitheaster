@@ -1,5 +1,5 @@
-import PassoverAndEasterSundayOverlap from "components/commonYears/PassoverAndEasterSundayOverlap.tsx";
-import StandardThreeHolidays from "components/standard/StandardThreeHolidays.tsx";
+import { PassoverAndEasterSundayOverlap } from "components";
+import { StandardThreeHolidays } from "components";
 import { PassoverAndEasterSunday } from "helpers";
 
 interface Props {
@@ -19,5 +19,3 @@ export const StandardYear = ({ holiday, className }: Props) => {
     </div>
   );
 };
-
-export default StandardYear;

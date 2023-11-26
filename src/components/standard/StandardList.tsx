@@ -1,4 +1,4 @@
-import StandardYear from "components/standard/StandardYear.tsx";
+import { StandardYear } from "components";
 import { numberOfYears } from "data/constants.ts";
 import { getNextX } from "helpers";
 
@@ -6,7 +6,7 @@ interface Props {
   numberOfDays: number;
 }
 
-const StandardList = ({ numberOfDays }: Props) => {
+export const StandardList = ({ numberOfDays }: Props) => {
   const listOfHolidays = getNextX(numberOfYears, numberOfDays);
   return (
     <>
@@ -30,5 +30,3 @@ const StandardList = ({ numberOfDays }: Props) => {
     </>
   );
 };
-
-export default StandardList;

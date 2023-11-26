@@ -28,5 +28,3 @@ export function ExpandableHeader({ shiftButton, showAbout, title }: Props) {
     </div>
   );
 }
-
-export default ExpandableHeader;

@@ -1,9 +1,9 @@
 import "./css/style.css";
 
-import FeaturedYear from "./components/featured/FeaturedYear.tsx";
-import StandardList from "./components/standard/StandardList.tsx";
+import { FeaturedYear } from "components";
+import { StandardList } from "components";
 import { useState } from "react";
-import About from "./components/app/About.tsx";
+import { About } from "components";
 import { holiday1, holiday2 } from "./data/constants.ts";
 
 function App() {
