@@ -1,10 +1,10 @@
 import { getHolidaysForYear } from "helpers";
 import FeaturedThreeHolidays from "components/featured/FeaturedThreeHolidays.tsx";
 import FeaturedYearHeader from "components/featured/FeaturedYearHeader.tsx";
-import PassoverAndEasterSundayOverlap from "components/PassoverAndEasterSundayOverlap.tsx";
+import PassoverAndEasterSundayOverlap from "components/commonYears/PassoverAndEasterSundayOverlap.tsx";
 import { getYearForNextHolidays } from "helpers";
 import { useState } from "react";
-import { SevenOrEightDays } from "components/SevenOrEightDays.tsx";
+import { SevenOrEightDays } from "components/commonYears/SevenOrEightDays.tsx";
 
 interface Props {
   numberOfDays: number;

@@ -3,7 +3,7 @@ import "./css/style.css";
 import FeaturedYear from "./components/featured/FeaturedYear.tsx";
 import StandardList from "./components/standard/StandardList.tsx";
 import { useState } from "react";
-import About from "./components/About.tsx";
+import About from "./components/app/About.tsx";
 import { holiday1, holiday2 } from "./data/constants.ts";
 
 function App() {

@@ -1,4 +1,4 @@
-import PassoverAndEasterSundayOverlap from "components/PassoverAndEasterSundayOverlap.tsx";
+import PassoverAndEasterSundayOverlap from "components/commonYears/PassoverAndEasterSundayOverlap.tsx";
 import StandardThreeHolidays from "components/standard/StandardThreeHolidays.tsx";
 import { PassoverAndEasterSunday } from "helpers";
 

@@ -1,5 +1,5 @@
-import OneHolidayVertical from "components/OneHolidayVertical.tsx";
-import { OneHolidayHorizontal } from "components/OneHolidayHorizontal.tsx";
+import OneHolidayVertical from "components/commonYears/OneHolidayVertical.tsx";
+import { OneHolidayHorizontal } from "components/commonYears/OneHolidayHorizontal.tsx";
 import { DateAndHoliday } from "helpers";
 
 interface Props {

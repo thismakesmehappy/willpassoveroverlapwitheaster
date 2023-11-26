@@ -1,4 +1,4 @@
-import Overlap from "components/Overlap.tsx";
+import Overlap from "components/commonYears/Overlap.tsx";
 import { holiday1, holiday2 } from "data/constants.ts";
 
 interface Props {
