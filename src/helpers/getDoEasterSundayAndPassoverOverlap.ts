@@ -1,6 +1,6 @@
-import { PassoverDates } from "helpers/getPassoverForYear.ts";
+import { PassoverDates } from "helpers";
 
-const getDoEasterSundayAndPassoverOverlap = (
+export const getDoEasterSundayAndPassoverOverlap = (
   passoverDates: PassoverDates,
   easterSundayDate: Date,
 ) => {
@@ -8,5 +8,3 @@ const getDoEasterSundayAndPassoverOverlap = (
   const passoverEnd: Date = passoverDates.end;
   return easterSundayDate >= passoverStart && easterSundayDate <= passoverEnd;
 };
-
-export default getDoEasterSundayAndPassoverOverlap;

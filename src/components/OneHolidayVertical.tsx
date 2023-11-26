@@ -1,6 +1,6 @@
-import { formatDatesLong, formatDatesShort } from "helpers/formatDates.ts";
+import { formatDatesLong, formatDatesShort } from "helpers";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { DateAndHoliday } from "helpers/DateAndHoliday.ts";
+import { DateAndHoliday } from "helpers";
 
 interface Props {
   holiday: DateAndHoliday;

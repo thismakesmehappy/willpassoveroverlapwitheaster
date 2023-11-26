@@ -1,4 +1,4 @@
-import getYearForNextHolidays from "helpers/getYearForNextHolidays";
+import { getYearForNextHolidays } from "helpers";
 
 test.each([
   {

@@ -1,9 +1,7 @@
-import getHolidaysForYear, {
-  PassoverAndEasterSunday,
-} from "helpers/getHolidaysForYear.ts";
-import getYearForNextHolidays from "helpers/getYearForNextHolidays.ts";
+import { getHolidaysForYear, PassoverAndEasterSunday } from "helpers";
+import { getYearForNextHolidays } from "helpers";
 
-const getNextX = (x: number, numberOfDays: number) => {
+export const getNextX = (x: number, numberOfDays: number) => {
   const startYear = getYearForNextHolidays(numberOfDays);
 
   const nextX: Array<PassoverAndEasterSunday> = [];
@@ -15,5 +13,3 @@ const getNextX = (x: number, numberOfDays: number) => {
 
   return nextX;
 };
-
-export default getNextX;

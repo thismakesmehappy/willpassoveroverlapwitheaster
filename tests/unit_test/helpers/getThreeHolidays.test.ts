@@ -3,7 +3,7 @@ import {
   passoverEnd,
   passoverStart,
   getThreeHolidaysInOrder,
-} from "helpers/getThreeHolidaysInOrder";
+} from "helpers";
 
 import { icons as iconsList } from "data/enums";
 import { compareDates } from "./testHelpers";

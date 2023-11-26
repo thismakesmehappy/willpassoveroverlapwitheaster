@@ -1,7 +1,7 @@
-import getPassoverForYear from "helpers/getPassoverForYear.ts";
-import getEasterSundayForYear from "helpers/getEasterSundayForYear.ts";
+import { getPassoverForYear } from "helpers";
+import { getEasterSundayForYear } from "helpers";
 
-const getYearForNextHolidays = (passoverDays: number) => {
+export const getYearForNextHolidays = (passoverDays: number) => {
   const today = new Date();
   let startYear = today.getFullYear();
   const thisPassover = getPassoverForYear(startYear, passoverDays);
@@ -12,5 +12,3 @@ const getYearForNextHolidays = (passoverDays: number) => {
 
   return startYear;
 };
-
-export default getYearForNextHolidays;

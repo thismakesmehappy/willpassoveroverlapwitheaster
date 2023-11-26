@@ -10,7 +10,7 @@ const passoverStartDescription: string = "Erev Pesach";
 const passoverEndDescriptionSevenDays: string = "Pesach VII";
 const passoverEndDescriptionEightDays: string = "Pesach VIII";
 
-const getPassoverForYear = (year: number, passoverDays: number) => {
+export const getPassoverForYear = (year: number, passoverDays: number) => {
   const options = {
     year: year,
     isHebrewYear: false,
@@ -40,5 +40,3 @@ const getPassoverForYear = (year: number, passoverDays: number) => {
     end: passoverEnd,
   } as PassoverDates;
 };
-
-export default getPassoverForYear;

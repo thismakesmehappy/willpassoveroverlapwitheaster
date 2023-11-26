@@ -1,4 +1,4 @@
-import { PassoverAndEasterSunday } from "helpers/getHolidaysForYear.ts";
+import { PassoverAndEasterSunday } from "helpers";
 import { icons } from "data/enums.ts";
 import { holiday1, holiday2 } from "data/constants.ts";
 

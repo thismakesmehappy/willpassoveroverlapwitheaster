@@ -1,4 +1,4 @@
-import { DateAndHoliday } from "helpers/DateAndHoliday";
+import { DateAndHoliday } from "helpers";
 import { icons } from "data/enums.ts";
 import { holiday1 } from "data/constants";
 

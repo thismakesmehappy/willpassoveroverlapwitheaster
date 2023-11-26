@@ -1,4 +1,4 @@
-import getDoEasterSundayAndPassoverOverlap from "helpers/getDoEasterSundayAndPassoverOverlap";
+import { getDoEasterSundayAndPassoverOverlap } from "helpers";
 import { PassoverDates } from "helpers/getPassoverForYear";
 
 // these are not real holiday dates, we just care that the relationship of the holidays matches

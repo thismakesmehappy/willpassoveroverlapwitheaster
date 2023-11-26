@@ -1,4 +1,4 @@
-import getPassoverForYear from "helpers/getPassoverForYear";
+import { getPassoverForYear } from "helpers";
 import { compareDates } from "./testHelpers";
 
 test.each([

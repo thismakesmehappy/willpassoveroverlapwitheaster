@@ -1,5 +1,5 @@
-import { formatDatesLong, formatDatesShort } from "helpers/formatDates.ts";
-import { DateAndHoliday } from "helpers/DateAndHoliday.ts";
+import { formatDatesLong, formatDatesShort } from "helpers";
+import { DateAndHoliday } from "helpers";
 
 interface Props {
   holiday: DateAndHoliday;

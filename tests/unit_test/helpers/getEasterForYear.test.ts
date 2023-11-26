@@ -1,4 +1,4 @@
-import getEasterSundayForYear from "helpers/getEasterSundayForYear";
+import { getEasterSundayForYear } from "helpers";
 import { compareDates } from "./testHelpers";
 
 test.each([

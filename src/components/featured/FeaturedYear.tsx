@@ -1,8 +1,8 @@
-import getHolidaysForYear from "helpers/getHolidaysForYear.ts";
+import { getHolidaysForYear } from "helpers";
 import FeaturedThreeHolidays from "components/featured/FeaturedThreeHolidays.tsx";
 import FeaturedYearHeader from "components/featured/FeaturedYearHeader.tsx";
 import PassoverAndEasterSundayOverlap from "components/PassoverAndEasterSundayOverlap.tsx";
-import getYearForNextHolidays from "helpers/getYearForNextHolidays.ts";
+import { getYearForNextHolidays } from "helpers";
 import { useState } from "react";
 import { SevenOrEightDays } from "components/SevenOrEightDays.tsx";
 

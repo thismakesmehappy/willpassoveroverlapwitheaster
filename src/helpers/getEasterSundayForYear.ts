@@ -4,7 +4,7 @@ import Holidays from "date-holidays";
 const hd = new Holidays("US");
 const easterSundayDescription: string = "Easter Sunday";
 
-const getEasterSundayForYear = (year: number) => {
+export const getEasterSundayForYear = (year: number) => {
   if (year <= 1000) {
     throw new Error("Year must be greater than 1000");
   }
@@ -20,5 +20,3 @@ const getEasterSundayForYear = (year: number) => {
   // TODO: Verify date is valid before returning
   return easterSundayDate;
 };
-
-export default getEasterSundayForYear;

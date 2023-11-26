@@ -1,4 +1,4 @@
-import getNextX from "helpers/getNextX";
+import { getNextX } from "helpers";
 
 test.each([
   { numberOfYears: 0, numberOfDays: 7 },
