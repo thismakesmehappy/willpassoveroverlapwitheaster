@@ -4,7 +4,7 @@ import { FeaturedYear } from "components";
 import { StandardList } from "components";
 import { useState } from "react";
 import { About } from "components";
-import { holiday1, holiday2 } from "./data/constants.ts";
+import { holiday1, holiday2 } from "data";
 
 function App() {
   const [numberOfDays, setNumberOfDays] = useState(8);

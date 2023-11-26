@@ -1,5 +1,5 @@
 import { StandardYear } from "components";
-import { numberOfYears } from "data/constants.ts";
+import { numberOfYears } from "data";
 import { getNextX } from "helpers";
 
 interface Props {

@@ -1,6 +1,6 @@
 import { PassoverAndEasterSunday } from "helpers";
-import { icons } from "data/enums.ts";
-import { holiday1, holiday2 } from "data/constants.ts";
+import { icons } from "data";
+import { holiday1, holiday2 } from "data";
 
 export const passoverStart = holiday1 + " Start";
 export const passoverEnd = holiday1 + " End";

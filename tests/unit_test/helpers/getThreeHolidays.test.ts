@@ -5,7 +5,7 @@ import {
   getThreeHolidaysInOrder,
 } from "helpers";
 
-import { icons as iconsList } from "data/enums";
+import { icons as iconsList } from "data";
 import { compareDates } from "./testHelpers";
 
 // these are not real holiday dates, we just care that the relationship of the holidays matches

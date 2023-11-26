@@ -1,4 +1,4 @@
-import { icons } from "data/enums.ts";
+import { icons } from "data";
 
 export interface DateAndHoliday {
   date: Date;

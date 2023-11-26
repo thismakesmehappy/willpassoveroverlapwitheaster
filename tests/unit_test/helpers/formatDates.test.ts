@@ -1,5 +1,5 @@
 import { formatDatesLong, formatDatesShort } from "helpers";
-import { daysShort, monthsShort } from "data/enums.ts";
+import { daysShort, monthsShort } from "data";
 
 test("Format Dates Long", () => {
   // Given
